@@ -1,0 +1,73 @@
+/*#046E8F*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: black;
+    color: white;
+}
+
+h1, h2, h3 {
+    font-family: 'Source Code Pro', monospace;
+}
+
+nav {
+  color: white;    
+  background: black;
+  overflow: hidden;
+  font-family: 'Major Mono Display', monospace;
+}
+
+nav a {
+  float: left;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+nav a:hover{
+  background: rgba(255, 255, 255, 25%);
+}
+
+img {
+    max-width:20%;
+    height:auto;
+}  
+
+Contact {
+  color: white;    
+  background: #046E8F;
+  overflow: hidden;
+}
+
+footer {
+  color: white;    
+  background: black;
+  overflow: hidden;
+  font-family: 'Major Mono Display', monospace;
+}
+
+footer a {
+  float: left;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+footer a:hover{
+  background: rgba(255, 255, 255, 25%);
+}
+  
+
+.introduction {
+  background-image: url(../pictures/paper.jpeg);
+  background-size: cover;
+  background-position: top right;
+  padding-bottom: 100px;
+  color: black;
+    
+  
+    
