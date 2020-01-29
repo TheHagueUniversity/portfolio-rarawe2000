@@ -1,16 +1,22 @@
 /*#046E8F*/
 
+
+/*Body*/
 body {
     font-family: 'Montserrat', sans-serif;
     background: black;
     color: white;
+    text-align:center;
 }
 
+/*Headings*/
 h1, h2, h3 {
-    font-family: 'Source Code Pro', monospace;
 }
 
+/*Navigation*/
 nav {
+  display: flex;
+  justify-content: center;
   color: white;    
   background: black;
   overflow: hidden;
@@ -30,11 +36,32 @@ nav a:hover{
   background: rgba(255, 255, 255, 25%);
 }
 
+/*Projects*/
 img {
     max-width:20%;
     height:auto;
-}  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+} 
 
+/*About Me*/
+.MyPicture {
+    border-radius: 50%;
+}
+
+.MyPhotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.aboutPhoto {
+   width: 100%;
+
+}
+
+/*Contact Info*/
 Contact {
   color: white;    
   background: #046E8F;
@@ -42,6 +69,8 @@ Contact {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
   color: white;    
   background: black;
   overflow: hidden;
@@ -60,14 +89,27 @@ footer a {
 footer a:hover{
   background: rgba(255, 255, 255, 25%);
 }
-  
+
+/*Education / Work Experience*/
+.education {
+    border-style: dotted;
+}
+
+.workExperience {
+    border-style: dotted;
+    margin-top:  10px;
+}
+    
+ /*Home*/
+.trailer {
+  right: 0;
+  bottom: 0;
+}
 
 .introduction {
   background-image: url(../pictures/paper.jpeg);
   background-size: cover;
   background-position: top right;
   padding-bottom: 100px;
-  color: black;
-    
-  
+  color: black; 
     
