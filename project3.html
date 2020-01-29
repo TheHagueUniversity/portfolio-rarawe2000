@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    
+    <head>
+    <meta charset="utf-8">
+        <title>Creative Artwork</title>
+        <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Montserrat:400,500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
+    </head>
+    
+    <body>
+       
+        <!-- ***************  NAVIGATION  **************** -->
+        <nav id="Navigation" class="NavigationBar">
+            <a href="index.html" title="Home">Home</a>
+            <a href="projects.html" title="Recent Projects">Recent Projects</a>
+            <a href="aboutMe.html" title="About Me">About Me</a>
+            <a href="experience.html" title="Experience">Experience</a>
+            <a href="#Contact" title="Contact">Contact</a>
+        </nav>
+        
+         <header>
+             <h2>Creative Artwork (Is This Art?)</h2>
+         </header>
+       
+         <main>
+             <section>
+                 <canvas id="CreativeArtwork" data-processing-sources="Processing/creativeArtworkDay3.pde"></canvas>
+             </section>
+             
+             <section>
+                 <p>As part of a programming bootcamp, where we familiarized ourselves with Processing and creative coding, we were tasked to create an interactive image incorporating several dynamic patterns. For the project we had four hours.</p>
+                 <p>My main idea behind the artwork I envisioned was that I wanted to incorporate color change when the user presses the right and left arrow keys. Another goal was to create mouse interaction.</p>
+                 <p>The concept behind the artwork is that the way art is perceived is really subjective, so every person has their own definition of what art is. The idea is that the artwork triggers the observer to think about their definition of art, so the interaction of artwork and observer does not only happen digitally and physically, but also on a cognitive level.</p>
+                 <p>How it works: The observer can hover over the canvas with the mouse to generate the letters and symbols “A”, “R”, “T”, “?”, “!”. If the mouse is located on the upper left side, the letters increase in size, if the mouse is located on the lower right side, the letters decrease in size. The position of the letters is generated randomly. To change the color scheme to red/blue tones, the right arrow key can be pressed, to change the color scheme to green/blue tones, the left arrow key can be pressed. If the observer does a mouse click, “IS THIS ART?!” is displayed.</p>
+                 <p>The artwork will be displayed at “Highlight Delft”, “a festival using the innovative city Delft as its platform to take people on a journey of new ideas and space on the nexus of art and technology”, from February 13, 2020 until February 15, 2020.</p>
+                 <a  href="https://www.highlightdelft.nl">Visit the website of Highlight Delft</a>
+             </section>
+         </main>
+    
+       <!-- ************  CONTACT INFO / SOCIAL MEDIA  ************ -->
+         <footer>
+            <div class="content-wrap">
+                <h2 id="Contact">Let's Keep in Touch!</h2>
+                <h3>Carina Volland</h3>
+                <h3>UX Designer</h3>
+                <a href="mailto:carina.volland@web.de">carina.volland@web.de</a>
+                <a  href="https://www.linkedin.com/in/carina-volland-1352221a0/">LinkedIn</a>
+            </div>
+         </footer>
+    </body>
+</html>
