@@ -1,11 +1,13 @@
+/*background-image: url(../pictures/blue.jpeg);*/
+
 /*Body*/
 body {
     font-family: 'Montserrat', sans-serif;
-    background: black;
-    color: white;
-    text-align:center;
-    background-image: url(../pictures/paper.jpeg);
+    background: white;
+    color: black;
+    text-align: center;
     margin: 0;
+    margin-top: 60px;
 }
 
 /*Headings*/
@@ -20,6 +22,10 @@ nav {
   background: black;
   overflow: hidden;
   font-family: 'Major Mono Display', monospace;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: -webkit-link;
 }
 
 nav a {
@@ -28,11 +34,11 @@ nav a {
   padding: 20px 20px;
   text-decoration: none;
   font-size: 20px;
-  color: white;
+  color: white; 
 }
 
 nav a:hover{
-  background: rgba(255, 255, 255, 25%);
+  background: rgba(255, 255, 255, 25%);   
 }
 
 /*Projects*/
@@ -41,7 +47,24 @@ img {
     height:auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-} 
+}
+
+.ProjectGallery {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.ProjectGallery div {
+    height:100px;
+    background-color: aqua;
+    height: 400px;
+    overflow: hidden;
+}
+
+.ProjectGallery div a video{
+    width: 100%;
+}
 
 /*About Me*/
 .MyPicture {
@@ -73,6 +96,7 @@ footer {
   overflow: hidden;
   font-family: 'Major Mono Display', monospace;
   padding-top: 40px;
+  padding-bottom: 0;    
 }
 
 footer a {
@@ -102,6 +126,7 @@ footer a:hover{
 .trailer {
   right: 0;
   bottom: 0;
+  z-index: -1; 
 }
 
 .button {
