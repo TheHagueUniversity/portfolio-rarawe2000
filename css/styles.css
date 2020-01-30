@@ -26,6 +26,7 @@ nav {
   top: 0;
   width: 100%;
   color: -webkit-link;
+  z-index: 100;   
 }
 
 nav a {
@@ -38,7 +39,7 @@ nav a {
 }
 
 nav a:hover{
-  background: rgba(255, 255, 255, 25%);   
+  background: rgba(255, 255, 255, 25%); 
 }
 
 /*Projects*/
@@ -52,18 +53,58 @@ img {
 .ProjectGallery {
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: black;
 }
 
-.ProjectGallery div {
-    height:100px;
-    background-color: aqua;
-    height: 400px;
+.ProjectGallery>div {
+    height: 590px;
+    width: 100%;
     overflow: hidden;
+    padding-top: 20px;
+    position: relative;
 }
 
 .ProjectGallery div a video{
     width: 100%;
+}
+
+.overlay {
+  position: absolute;  
+  background-color: rgba(0,0,0,0.5);
+  overflow: hidden;
+  transition: .5s ease; 
+  bottom: 100%;
+  width: 100%;    
+}
+
+.project1Container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.project2Container:hover .overlay {
+  bottom: 0;
+  height: 100%; 
+}
+
+.project3Container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.project4Container:hover .overlay {
+  bottom: 0;
+  height: 100%; 
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 18px;
+  position: relative;
+  transition: .5s ease; 
+  top: 90%;
 }
 
 /*About Me*/
@@ -72,13 +113,14 @@ img {
 }
 
 .MyPhotos {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     justify-content: center;
 }
 
 .aboutPhoto {
    width: 100%;
+   max-width: 100%;
 }
 
 /*Contact Info*/
@@ -126,7 +168,7 @@ footer a:hover{
 .trailer {
   right: 0;
   bottom: 0;
-  z-index: -1; 
+  z-index: -100; 
 }
 
 .button {
