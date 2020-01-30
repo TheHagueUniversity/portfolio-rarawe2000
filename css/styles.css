@@ -38,8 +38,29 @@ nav a {
   color: white; 
 }
 
-nav a:hover{
-  background: rgba(255, 255, 255, 25%); 
+.nav1:hover {
+  background: rgba(255, 0, 0, 85%); 
+}
+
+.current {
+  background: white;
+  color: black; 
+}
+
+.nav2:hover {
+  background: rgba(255, 165, 0, 85%); 
+}
+
+.nav3:hover {
+  background: rgba(255, 255, 0, 85%); 
+}
+
+.nav4:hover {
+  background: rgba(0, 255, 0, 85%); 
+}
+
+.nav5:hover{
+  background: rgba(0, 0, 255, 85%); 
 }
 
 /*Projects*/
