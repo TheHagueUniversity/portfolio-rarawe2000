@@ -5,7 +5,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background: white;
     color: black;
-    text-align: center;
+    text-align: left;
     margin: 0;
     margin-top: 60px;
 }
@@ -42,11 +42,6 @@ nav a {
   background: rgba(255, 0, 0, 85%); 
 }
 
-.current {
-  background: white;
-  color: black; 
-}
-
 .nav2:hover {
   background: rgba(255, 165, 0, 85%); 
 }
@@ -61,6 +56,11 @@ nav a {
 
 .nav5:hover{
   background: rgba(0, 0, 255, 85%); 
+}
+
+.current {
+  background: white;
+  color: black; 
 }
 
 /*Projects*/
@@ -126,11 +126,35 @@ img {
   position: relative;
   transition: .5s ease; 
   top: 90%;
+  text-align: center;    
 }
 
 /*About Me*/
+
+.IntroGrid {
+   display:grid;
+   grid-template-columns: 2fr 1fr;
+}
+
+.Introduction {
+    padding:50px;
+}
+
+.Introduction button {
+    padding-left: 20px;
+}
+
 .MyPicture {
     border-radius: 50%;
+    display: block;
+    margin: auto;
+    max-width: 300px;
+}
+
+.AboutMe{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 50px;
 }
 
 .MyPhotos {
@@ -159,7 +183,8 @@ footer {
   overflow: hidden;
   font-family: 'Major Mono Display', monospace;
   padding-top: 40px;
-  padding-bottom: 0;    
+  padding-bottom: 0;  
+  text-align: center;    
 }
 
 footer a {
@@ -178,18 +203,39 @@ footer a:hover{
 /*Education / Work Experience*/
 .education {
     border-style: dotted;
+    padding: 30px;
 }
 
 .workExperience {
     border-style: dotted;
     margin-top:  10px;
+    padding: 30px;
 }
     
  /*Home*/
 .trailer {
   right: 0;
   bottom: 0;
-  z-index: -100; 
+  z-index: -100;
+  background: black;
+}
+
+.video {
+    margin: 0 auto;
+    display: block;
+}
+
+.AboutGrid {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+}
+
+.LeftEdge {
+    background: black;
+}
+
+.RightEdge {
+    background: black;
 }
 
 .button {
@@ -198,7 +244,6 @@ footer a:hover{
   text-decoration: none;
   padding: 10px;
   border-radius: 4px;  
-  margin: 0 0 0 20px; 
 }
 
 .button:hover{
@@ -206,10 +251,10 @@ footer a:hover{
 }
 
 .introduction {
-  background-size: cover;
-  background-position: top right;
   padding-bottom: 100px;
-  color: black;   
+  color: black;
+  padding: 90px; 
+   
 }
     
     
