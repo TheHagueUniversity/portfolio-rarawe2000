@@ -217,6 +217,8 @@ footer a:hover{
 /*Education / Work Experience*/
 .education {
     padding: 50px 50px 0px 50px;
+    display:grid;
+    grid-template-columns: 53% 20% 20%;
 }
 
 .workExperience {
@@ -226,6 +228,20 @@ footer a:hover{
 .EducationLine {
    border-bottom: 10px solid turquoise; 
    padding-top: 30px;  
+}
+
+.EducationPhoto1 {
+    transform: rotate(90deg);
+    margin: 80px 20px 20px 60px;
+    display: block;
+    max-width: 315px;
+}
+
+.EducationPhoto2 {
+    transform: rotate(90deg);
+    margin: 50px 20px 20px 50px;*/
+    display: block;
+    max-width: 315px;
 }
     
  /*Home*/
