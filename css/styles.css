@@ -162,7 +162,7 @@ img {
     padding-right: 70px;
 }
 
-.RedLine {
+.IntroLine {
     border-top: 10px solid turquoise;
 }
 
@@ -216,11 +216,16 @@ footer a:hover{
 
 /*Education / Work Experience*/
 .education {
-    padding: 50px;
+    padding: 50px 50px 0px 50px;
 }
 
 .workExperience {
-    padding: 50px;
+    padding: 20px 50px 50px 50px;
+}
+
+.EducationLine {
+   border-bottom: 10px solid turquoise; 
+   padding-top: 30px;  
 }
     
  /*Home*/
