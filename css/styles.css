@@ -243,6 +243,12 @@ footer a:hover{
     display: block;
     max-width: 315px;
 }
+
+.Skills {
+    padding: 50px;
+    border: 10px solid turquoise;
+    margin: 50px;
+}
     
  /*Home*/
 .trailer {
