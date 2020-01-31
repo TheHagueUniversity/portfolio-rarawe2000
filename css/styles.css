@@ -153,14 +153,28 @@ img {
 
 .AboutMe{
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    padding: 50px;
+    grid-template-columns: 0.8fr 2.3fr;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+.MeText {
+    padding-right: 70px;
+}
+
+.RedLine {
+    border-top: 10px solid turquoise;
+}
+
+.Interested {
+    padding-bottom: 20px;
 }
 
 .MyPhotos {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-content: center;
+    border-top: 20px solid black;
 }
 
 .aboutPhoto {
@@ -202,14 +216,11 @@ footer a:hover{
 
 /*Education / Work Experience*/
 .education {
-    border-style: dotted;
-    padding: 30px;
+    padding: 50px;
 }
 
 .workExperience {
-    border-style: dotted;
-    margin-top:  10px;
-    padding: 30px;
+    padding: 50px;
 }
     
  /*Home*/
@@ -228,6 +239,7 @@ footer a:hover{
 .AboutGrid {
     display: grid;
     grid-template-columns: 5% 90% 5%;
+    border-top: 20px solid yellow;
 }
 
 .LeftEdge {
