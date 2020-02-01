@@ -222,9 +222,13 @@ footer a:hover{
 }
 
 .workExperience {
-    padding: 20px 50px 50px 50px;
+    padding: 20px 50px 0px 50px;
     display: grid;
     grid-template-columns: 1fr 2fr;
+}
+
+.WorkVideo{
+    margin: 50px 0px 0px 20px;
 }
 
 .WorkInfo ul {
@@ -240,6 +244,24 @@ footer a:hover{
 .WorkPhoto {
     max-width: 350px;
     padding: 30px 0px 0px 20px;
+}
+
+.Achievements {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 20px 0px 0px 70px;
+}
+
+.Achievements img {
+    max-width:600px;
+    padding-right: 84px;
+}
+
+.AchieveInfo {
+    border-right: 10px solid turquoise;
+    border-top: 10px solid turquoise;
+    padding: 30px 40px 0px 20px;
+    margin-right: 80px;
 }
 
 .EducationLine {
@@ -262,9 +284,15 @@ footer a:hover{
 }
 
 .Skills {
-    padding: 50px;
+    padding: 20px 50px 50px 50px;
     border: 10px solid turquoise;
-    margin: 50px;
+    margin: 40px 80px 60px 80px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.SkillsTwo {
+    margin-top: 67px;
 }
     
  /*Home*/
