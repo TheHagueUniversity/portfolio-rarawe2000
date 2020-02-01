@@ -182,6 +182,32 @@ img {
    max-width: 100%;
 }
 
+/*4 Projects*/
+.ProjectText {
+    padding: 50px 50px 0px 50px;
+}
+
+.ProjectGrid {
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 70px 90px 80px 90px;
+}
+
+.ProjectGrid video {
+    height: 370px;
+    width:auto;
+}
+
+.ProjectGrid section:nth-child(2n) {
+    border-right: 10px solid turquoise;
+}
+
+.ProjectGrid section:last-child {
+    border-bottom: 10px solid turquoise;  
+    margin-bottom: 4px;
+}
+
+
 /*Contact Info*/
 Contact {
   color: white;    
@@ -307,7 +333,7 @@ footer a:hover{
   background: black;
 }
 
-.video {
+.trailer video {
     margin: 0 auto;
     display: block;
 }
