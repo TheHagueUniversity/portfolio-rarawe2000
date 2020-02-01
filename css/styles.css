@@ -264,9 +264,13 @@ footer a:hover{
     margin-right: 80px;
 }
 
-.EducationLine {
-   border-bottom: 10px solid turquoise; 
-   padding-top: 30px;  
+.EduInfo {
+    padding-left: 19px;  
+}
+
+.EduInfo ul {
+    border-bottom: 10px solid turquoise;
+    padding-bottom: 30px;
 }
 
 .EducationPhoto1 {
