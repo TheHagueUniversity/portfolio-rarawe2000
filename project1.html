@@ -124,23 +124,23 @@
              </div>
              
               <script>
-                    var slideIndex = 1;
-                    showDivs(slideIndex);
+                    var pictureIndex = 1;
+                    displayImage(pictureIndex);
 
                     function plusDivs(n) {
-                      showDivs(slideIndex += n);
+                      displayImage(pictureIndex += n);
                     }
 
-                    function showDivs(n) {
+                    function displayImage(n) {
                       var i;
                       var x = document.getElementsByClassName("Slideshow1");
-                      if (n > x.length) {slideIndex = 1}
-                      if (n < 1) {slideIndex = x.length} ;
+                      if (n < 1) {pictureIndex = x.length} ;
                       for (i = 0; i < x.length; i++) {
                         x[i].style.display = "none";
                       }
-                      x[slideIndex-1].style.display = "block";
-                    }
+                      if (n > x.length) {pictureIndex = 1}
+                      x[pictureIndex-1].style.display = "block";
+                      }
                  </script>
              
              <div>
@@ -151,7 +151,7 @@
              
              
              
-             <div>
+             <div class="LeftText">
                <h3>Prototype</h3>
                <p>In the prototype phase, we started with creating a paper prototype and tested it with users. Based on the feedback we received, we redid the paper prototype and created multiple versions of it, before testing again and translating our findings into digital prototypes. We also got a visit from Hallmark during the prototype phase, who gave us the feedback that we should simplify the card design and unwrapping part keeping in mind that there are users that do not want to spend a lot of time designing a card and opening a gift.</p>
              </div>
@@ -187,7 +187,7 @@
              
              
          </div>
-         <div>
+         <div class="IntroLine">
              <h3>The result</h3>
              <p>After pitching our concept to our teachers, we were chosen to pitch to the client Hallmark. Since the project itself was about bespoke design, we turned our bespoke ideas into ideas and recommendations that Hallmark could actually use for their broad customer base.</p>
              <a class="button" href="https://xd.adobe.com/view/e87aaf35-5b13-459a-5663-8a99256b365c-9e4b/">Have a look at the final digital unwrapping!</a>
