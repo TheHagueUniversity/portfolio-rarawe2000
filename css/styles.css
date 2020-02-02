@@ -247,6 +247,22 @@ nav a {
     margin: 10px;
 }
 
+.BespokeGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin: 30px;
+}
+
+.BespokeGrid img:first-child {
+    width: 380px;
+    height: auto;
+    transform: rotate(-90deg);
+    grid-row: 1 / -1; 
+    align-self: center; 
+    margin: -60px 0px 30px 70px;
+}
+
 /*Contact Info*/
 Contact {
   color: white;    
