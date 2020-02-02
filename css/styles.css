@@ -173,9 +173,6 @@ nav a {
 }
 
 /*4 Projects*/
-.ProjectText {
-    padding: 50px 50px 0px 50px;
-}
 
 .ProjectGrid {
     display:grid;
@@ -208,7 +205,19 @@ nav a {
 .ProjectGrid img {
     width:350px;
     margin-top: 30px;
-    border: 5px solid black;
+/*    border: 5px solid black;*/
+}
+
+#BlackHoleGraph {
+    width: 242px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#GroupPic {
+    width: auto;
+    height: 232.031px;
+    margin: 0px 0px 20px 50px;
 }
 
 /*Contact Info*/
