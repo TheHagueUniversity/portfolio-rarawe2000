@@ -86,11 +86,8 @@
      <main>
          <div class="BespokeGrid">
              
-             
              <div>
-                 <img alt="Mindmap" src="pictures/mindmap.jpg">
-                 <img alt="Card Sorting" src="pictures/CardSort.png">
-                 <img alt="Surprise" src="pictures/surprise.jpg">
+                 <img id="Mindmap" alt="Mindmap" src="pictures/mindmap.jpg">
              </div>
              <div>     
                <h3>Explore</h3>  
@@ -99,8 +96,7 @@
                <p>In the empathize phase, we conducted the research methods we agreed on during the Explore Phase: ethnographic interviewing, observations, social network mapping (to get an insight into potential gift givers), scenario testing (we asked our users to sort 20 example gifts in order of their preference while thinking aloud), and an intervention (making a Dutch “Sinterklaas surprise” for our users and observe their reaction and behavioral patterns).</p>
              </div>
              
-             
-             <div>
+             <div class="LeftText">
                <h3>Define</h3>
                <p>In the Define Phase, we created user portraits for each of our users. Part of the project was to combine our user portraits into a persona with our design team. Based on our persona we created a design vision, defining the needs of user and giver and defining the design challenge as a base for the Ideate Phase.</p>
                <h3>Receiver needs</h3>
@@ -116,15 +112,37 @@
                   <li>Support the receiver in his future plans to start a family</li>
                </ul>  
              </div>
-             <img alt="Persona" src="pictures/Bob.png">
+             <img id="Persona" alt="Persona" src="pictures/Bob.png">
              
-             <div>
-             <img alt="Card Ideas" src="pictures/Diverging1.jpg">
-             <img alt="Unwrapping Ideas" src="pictures/Diverging2.jpg">
-             <img alt="Card Personalization Ideas" src="pictures/Diverging3.jpg">
-             <img alt="Final Storyboard 1" src="pictures/Storyboard1.jpg">
-             <img alt="Final Storyboard 2" src="pictures/Storyboard2.jpg">
+             <div id="Slideshow">
+                 <img class="Slideshow1" id="UnwrappingIdeas" alt="Unwrapping Ideas" src="pictures/Diverging2.jpg">
+                 <img class="Slideshow1" id="ToolIdeas" alt="Card Personalization Ideas" src="pictures/Diverging3.jpg">
+                 <img class="Slideshow1" id="Storyboard1" alt="Final Storyboard 1" src="pictures/Storyboard1.jpg">
+                 <img class="Slideshow1" id="Storyboard2" alt="Final Storyboard 2" src="pictures/Storyboard2.jpg">
+                 <button class="LeftButton" onclick="plusDivs(-1)">&#10094;</button>
+                 <button class="RightButton" onclick="plusDivs(+1)">&#10095;</button>
              </div>
+             
+              <script>
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
+
+                    function plusDivs(n) {
+                      showDivs(slideIndex += n);
+                    }
+
+                    function showDivs(n) {
+                      var i;
+                      var x = document.getElementsByClassName("Slideshow1");
+                      if (n > x.length) {slideIndex = 1}
+                      if (n < 1) {slideIndex = x.length} ;
+                      for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                      }
+                      x[slideIndex-1].style.display = "block";
+                    }
+                 </script>
+             
              <div>
                <h3>Ideate</h3>
                <p>In the idea phase we sketched a lot of ideas using a design matrix. Also, I conducted the “Crazy Eights Exercise” with a group of people from our course. The How Might We question I used for that was “How might we connect the receiver to past, present and future of family traditions and generations of his family?”. Individually, we came up with three draft concepts each, and after a discussion we combined them to three shared concepts of which we chose the best one based on feedback we got in class.</p>
@@ -138,14 +156,13 @@
                <p>In the prototype phase, we started with creating a paper prototype and tested it with users. Based on the feedback we received, we redid the paper prototype and created multiple versions of it, before testing again and translating our findings into digital prototypes. We also got a visit from Hallmark during the prototype phase, who gave us the feedback that we should simplify the card design and unwrapping part keeping in mind that there are users that do not want to spend a lot of time designing a card and opening a gift.</p>
              </div>
              <div>
-             <img alt="Paper Prototype" src="pictures/PaperPrototype.png">
-             <img alt="Digital Prototype" src="pictures/Storyboard2.jpg">
+<!--VIDEOS-->
              </div>
              
              
              <div>
              <img alt="User Testing Paper" src="pictures/Testing2.jpg">
-             <img alt="User Testing Digital" src="pictures/Testing3.jpg">
+             <img id="Testing" alt="User Testing Digital" src="pictures/Testing3.jpg">
              </div>
              <div>
                <h3>Test</h3>
