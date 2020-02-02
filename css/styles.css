@@ -204,6 +204,11 @@ img {
     margin-bottom: 4px;
 }
 
+#CreativeArtwork {
+    height: 350px;
+    width: auto;
+    padding-top: 20px;
+}
 
 /*Contact Info*/
 Contact {
