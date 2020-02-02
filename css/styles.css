@@ -205,7 +205,6 @@ nav a {
 .ProjectGrid img {
     width:350px;
     margin-top: 30px;
-/*    border: 5px solid black;*/
 }
 
 #BlackHoleGraph {
@@ -218,6 +217,34 @@ nav a {
     width: auto;
     height: 232.031px;
     margin: 0px 0px 20px 50px;
+}
+
+.Bespoke {
+    padding: 70px 90px 80px 90px;;
+}
+
+.ProjectOverview {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-bottom: 10px solid turquoise;  
+    border-top: 10px solid turquoise; 
+    padding: 30px 30px 20px 30px;
+    margin-top: 40px;
+}
+
+.Arrow {
+    width: 80px;
+    height: auto;
+    margin-left: 40px;
+    margin-bottom: -5px;
+}
+
+.ProcessDescription {
+    margin-top: 30px;
+}
+
+.phase {
+    margin: 10px;
 }
 
 /*Contact Info*/
