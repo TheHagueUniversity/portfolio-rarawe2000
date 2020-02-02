@@ -207,7 +207,14 @@ img {
 #CreativeArtwork {
     height: 350px;
     width: auto;
-    padding-top: 20px;
+    margin-top: 20px;
+    border: 5px solid black;
+}
+
+.ProjectGrid img {
+    width:350px;
+    margin-top: 30px;
+    border: 5px solid black;
 }
 
 /*Contact Info*/
