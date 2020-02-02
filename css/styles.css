@@ -254,13 +254,62 @@ nav a {
     margin: 30px;
 }
 
-.BespokeGrid img:first-child {
+.BespokeGrid img{
+    width:380px;
+    border: 2px solid black;  
+}
+
+#Mindmap {
     width: 380px;
     height: auto;
     transform: rotate(-90deg);
     grid-row: 1 / -1; 
     align-self: center; 
-    margin: -60px 0px 30px 70px;
+    margin: -60px 0px -50px 70px;
+}
+
+.LeftText {
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+
+#Persona {
+    width: 600px;
+    height: auto;
+    align-self: center; 
+}
+
+#Mindmap {
+    width: 380px;
+    height: auto;
+    transform: rotate(-90deg);
+    grid-row: 1 / -1; 
+    align-self: center; 
+    margin: -60px 0px -50px 70px;
+}
+
+#UnwrappingIdeas {
+    width: 537px; 
+}
+
+#ToolIdeas {
+    width: 537px; 
+}
+
+#Storyboard1 {
+    width: 537px; 
+}
+
+#Storyboard2 {
+    width: 537px; 
+}
+
+.Slideshow1 {
+    margin-top: 15px;
+}
+
+#Testing {
+   transform: rotate(180deg); 
 }
 
 /*Contact Info*/
