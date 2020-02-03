@@ -314,11 +314,6 @@ nav a {
     margin: -15px 0px 15px 0px;
 }
 
-#SlideshowContainer2 button {
-    font-size: 20px;
-    margin-top: 20px; 
-}
-
 #HallmarkLogo {
     border: 0;
     margin-left: 70px;
@@ -329,15 +324,6 @@ nav a {
    transform: rotate(180deg);
    width: 537px;    
 }
-
-#Testing1 {
-   width: 537px;    
-}
-
-.Slideshow2 {
-    margin-top: 20px;
-}
-
 
 #ProtoVideo {
   border: 2px solid black;  
