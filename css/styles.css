@@ -326,6 +326,14 @@ nav a {
   margin-bottom: 30px;
 }
 
+#FinalPrototype {
+    width: 530px;
+    height: auto;
+    padding: 35px 20px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
 /*Contact Info*/
 Contact {
   color: white;    
@@ -472,6 +480,16 @@ footer a:hover{
 
 .introduction {
     text-align: center;
+}
+
+.introduction header h2:last-of-type {
+    margin-top: 40px;
+}
+
+.introduction h1 span {
+    font-size: 40px;
+    text-align: center; 
+    background: rgba(64,224,208,0.6)
 }
 
 .button {
