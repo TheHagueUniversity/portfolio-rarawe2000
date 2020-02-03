@@ -135,6 +135,7 @@ nav a {
     display: block;
     margin: auto;
     max-width: 300px;
+    padding-right: 30px;
 }
 
 .AboutMe{
@@ -144,7 +145,7 @@ nav a {
 }
 
 .AboutMe div {
-    padding-right: 70px;
+    padding: 0px 70px 0px 40px;
 }
 
 .IntroLine {
@@ -187,7 +188,7 @@ nav a {
 
 .ProjectGrid section:last-child {
     border-bottom: 10px solid turquoise;  
-    margin-bottom: 4px;
+    margin-bottom: 0px 0px 4px 40px;;
 }
 
 #CreativeArtwork {
@@ -404,6 +405,7 @@ footer a:hover{
 
 .workExperience div:last-of-type {
     padding-top: 5px;
+    margin-left: 40px;
 }
 
 .Achievements {
@@ -514,3 +516,233 @@ footer a:hover{
   color: #29a3a3;
   text-decoration: underline solid #29a3a3;
 }
+
+/*media queries -------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+@media only screen and (max-width: 1370px) {
+  
+    .text {
+      font-size: 17px;
+      text-align: center;    
+    }
+    
+    .ProjectGallery>div {
+       height: 500px;    
+    }
+    
+    .Achievements img {
+        max-width: 620px;
+    }
+    
+    #Fashion {
+        grid-template-columns: 1fr;
+    }
+    
+    #Fashion video {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+ 
+}
+
+@media only screen and (max-width: 1200px) {
+    .text {
+      font-size: 15px;
+      text-align: center;    
+    }
+    
+    .ProjectGallery>div {
+       height: 450px;    
+    }
+    
+    iframe {
+        height: 450px;
+    }
+    
+    .EducationPhoto {
+        margin-left: 0;
+    }
+    
+    #EducationPhoto2 {
+        margin-right: 40px;
+    }
+    
+    .Achievements {
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    .Achievements img {
+        max-width: 400px;
+    }
+    
+    
+@media only screen and (max-width: 1050px) {
+    
+    .ProjectGallery>div {
+       width: 300px;
+       margin: auto;
+    }
+    
+    .ProjectGallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    iframe {
+        height: 500px;
+    }
+    
+    .Achievements {
+        grid-template-columns: 1fr;
+    }
+    
+    .Achievements img {
+       margin: 40px 0px 0px 10px;
+    }
+    
+    .education {
+        grid-template-columns: 1fr;
+    }
+    
+    .workExperience {
+        grid-template-columns: 1fr;
+    }
+    
+    .workExperience video {
+        height: 236px;
+        width: auto;
+    }
+    
+    .EducationPhoto {
+        width: auto;
+    }
+    
+    #EducationPhoto2 {
+        position: absolute; top: 416px; left: 400px;
+    }
+    
+    
+}
+    
+@media only screen and (max-width: 915px) { 
+    .EducationPhoto {
+        display: none; 
+    }
+    
+    .workExperience img {
+        max-width: 420px;
+    }
+}
+    
+ @media only screen and (max-width: 960px) {   
+     
+     iframe {
+        height: 80px;
+        width: 300px;
+        position: relative;
+        margin: 10px 0px 10px 20px; 
+    }
+     
+     .AboutMe {
+         display: blocK;
+         padding-left: 30px;
+     }
+     
+     .AboutMe div {
+         padding: 0px 70px 0px 20px;
+     }
+}
+
+
+@media only screen and (max-width: 860px) {
+   nav {
+        justify-content: space-around;
+    }
+    
+   nav a {
+       font-size: 17px;
+       padding: none;
+   }
+    
+   footer a {
+       font-size: 17px;
+       display: flex;
+       flex-wrap: nowrap;
+   }
+    
+   h2{
+      font-size: 1.3em;  
+   }
+    
+   h3{
+      font-size: 1em;   
+   }  
+    
+   .MyPicture {
+      max-width: 200px;
+       vertical-align: middle;
+   }
+    
+    .IntroGrid {
+      grid-template-columns: 1fr;       
+    }
+    
+    iframe {
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .Skills {
+        grid-template-columns: 1fr;
+    }
+    
+    .Skills ul:last-child {
+        margin-top: 0;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 600px) {
+   nav a {
+       font-size: 12px;
+   }
+    
+   footer a {
+       font-size: 12px;
+       display: flex;
+       flex-wrap: nowrap;
+   }
+    
+   .ProjectGallery {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    
+    .workExperience div:last-of-type ul {
+        border: 10px solid turquoise;
+        padding-left: 40px;
+    }
+    
+    .Achievements div:first-of-type {
+        border: 10px solid turquoise;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
