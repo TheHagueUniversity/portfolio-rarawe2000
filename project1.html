@@ -114,7 +114,7 @@
              </div>
              <img id="Persona" alt="Persona" src="pictures/Bob.png">
              
-             <div id="Slideshow">
+             <div id="SlideshowContainer1">
                  <img class="Slideshow1" id="UnwrappingIdeas" alt="Unwrapping Ideas" src="pictures/Diverging2.jpg">
                  <img class="Slideshow1" id="ToolIdeas" alt="Card Personalization Ideas" src="pictures/Diverging3.jpg">
                  <img class="Slideshow1" id="Storyboard1" alt="Final Storyboard 1" src="pictures/Storyboard1.jpg">
@@ -145,7 +145,9 @@
              
              <div>
                <h3>Ideate</h3>
-               <p>In the idea phase we sketched a lot of ideas using a design matrix. Also, I conducted the “Crazy Eights Exercise” with a group of people from our course. The How Might We question I used for that was “How might we connect the receiver to past, present and future of family traditions and generations of his family?”. Individually, we came up with three draft concepts each, and after a discussion we combined them to three shared concepts of which we chose the best one based on feedback we got in class.</p>
+               <p>In the ideate phase we sketched a lot of ideas using a design matrix. Also, I conducted the “Crazy Eights Exercise” with my classmates. The How Might We question I used was “How might we connect the receiver to past, present and future of family traditions and generations of his family?”. Individually, we came up with three draft concepts each, and after a discussion we combined them to three shared concepts of which we chose the best one based on feedback we got in class.</p>
+               <h3>Final Concept: "Guess Who?!"</h3>
+               <p>The scannable card cover links to a video of the giver explaining the game “Guess Who?!”. The card contains three pull-out sections with scannable pictures that link to the quiz questions. A QR-code on the card links to the digital unwrapping app, where the receiver has to pick the right described family member, who then gets added to the photo gallery. After the quiz, the receiver has to take and upload a picture of his brother to complete the gallery. He has to call his mother, so she can be with him when the gift is revealed. Afterwards, the receiver can send a Hallmark card back to the giver as a “Thank You” message.</p>
              </div>
              
              
@@ -154,16 +156,41 @@
              <div class="LeftText">
                <h3>Prototype</h3>
                <p>In the prototype phase, we started with creating a paper prototype and tested it with users. Based on the feedback we received, we redid the paper prototype and created multiple versions of it, before testing again and translating our findings into digital prototypes. We also got a visit from Hallmark during the prototype phase, who gave us the feedback that we should simplify the card design and unwrapping part keeping in mind that there are users that do not want to spend a lot of time designing a card and opening a gift.</p>
+               <img id="HallmarkLogo" alt="Hallmark Logo" src="pictures/Hallmark.png">
              </div>
              <div>
-<!--VIDEOS-->
+                <video id="ProtoVideo" width = 100% height=auto muted autoplay loop>
+                    <source src="video/Prototypes.mp4" type="video/mp4">
+                </video>
              </div>
              
-             
-             <div>
-             <img alt="User Testing Paper" src="pictures/Testing2.jpg">
-             <img id="Testing" alt="User Testing Digital" src="pictures/Testing3.jpg">
+             <div id="SlideshowContainer2">
+                 <img class="Slideshow2" id="Testing1" alt="User Testing Paper" src="pictures/Testing2.jpg">
+                 <img class="Slideshow2" id="Testing2" alt="User Testing Digital" src="pictures/Testing3.jpg">
+                 <button class="LeftButton" onclick="plusDivs(-1)">&#10094;</button>
+                 <button class="RightButton" onclick="plusDivs(+1)">&#10095;</button>
              </div>
+             
+             <script>
+                    var pictureIndex = 1;
+                    displayImage(pictureIndex);
+
+                    function plusDivs(n) {
+                      displayImage(pictureIndex += n);
+                    }
+
+                    function displayImage(n) {
+                      var i;
+                      var x = document.getElementsByClassName("Slideshow2");
+                      if (n < 1) {pictureIndex = x.length} ;
+                      for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                      }
+                      if (n > x.length) {pictureIndex = 1}
+                      x[pictureIndex-1].style.display = "block";
+                      }
+             </script>
+             
              <div>
                <h3>Test</h3>
                <p>With the paper and digital prototypes, I conducted around 10 user trials. I implemented the feedback I received in my iterated prototype versions. I also did final tests with my final digital prototype. Moreover, I tested different versions of the digital unwrapping, to find out which options our test users enjoyed most.</p>
@@ -174,13 +201,6 @@
                   <li>Implementing voice recordings in the pull-outs will make the card too bulky</li>
                   <li>The user's interaction between card and unwrapping app should be consistent / we should decide on one type of interaction</li>
                 </ul>  
-               <h3>Main iterations</h3>
-               <ul>
-                  <li>The receiver can reach out to the missing family member through social media; they do not have to meet up</li>
-                  <li>Reformulating instructions in the unwrapping (more concise, more entertaining)</li>
-                  <li>"Hallmark Loop": The receiver can directly send a Hallmark card back to the giver in order to thank him / her</li>
-                  <li>Combining scanning of the pull-out pictures with the "Guess Who?! quiz in the app, creating interaction"</li>
-                </ul>  
              </div>
              
              
@@ -189,6 +209,15 @@
          </div>
          <div class="IntroLine">
              <h3>The result</h3>
+             
+             <h3>Main iterations</h3>
+               <ul>
+                  <li>The receiver can reach out to the missing family member through social media; they do not have to meet up</li>
+                  <li>Reformulating instructions in the unwrapping (more concise, more entertaining)</li>
+                  <li>"Hallmark Loop": The receiver can directly send a Hallmark card back to the giver in order to thank him / her</li>
+                  <li>Combining scanning of the pull-out pictures with the "Guess Who?! quiz in the app, creating interaction"</li>
+                </ul>  
+             
              <p>After pitching our concept to our teachers, we were chosen to pitch to the client Hallmark. Since the project itself was about bespoke design, we turned our bespoke ideas into ideas and recommendations that Hallmark could actually use for their broad customer base.</p>
              <a class="button" href="https://xd.adobe.com/view/e87aaf35-5b13-459a-5663-8a99256b365c-9e4b/">Have a look at the final digital unwrapping!</a>
          </div>
