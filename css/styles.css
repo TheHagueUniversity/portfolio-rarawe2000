@@ -269,6 +269,10 @@ nav a {
     padding-bottom: 20px;
 }
 
+.RightText {
+    margin-left: 40px;
+}
+
 #Persona {
     width: 600px;
     height: auto;
@@ -598,6 +602,39 @@ footer a:hover{
         max-width: 400px;
     }
     
+    .BespokeGrid {
+        grid-template-columns: 1fr;
+    }
+    
+    .LeftText {
+        padding-right: 0;
+        padding-left: 40px;
+    }
+    
+    .BespokeGrid img {
+        margin-left: 40px;
+    }
+    
+    #Mindmap {
+        margin-left: 120px;
+    }
+    
+    .BespokeGrid video {
+        width: 537px;
+        height: auto;
+        margin-left: 40px;
+    }
+    
+    #Persona {
+        width: 537px;
+    }
+    
+    #FinalPrototype {
+         width: 537px;
+    }
+    
+}
+    
     
 @media only screen and (max-width: 1050px) {
     
@@ -658,6 +695,13 @@ footer a:hover{
     .workExperience img {
         max-width: 420px;
     }
+    
+    .ProjectOverview {
+        display: block;
+        justify-content: center;
+        margin-left: 40px;
+    }
+    
 }
     
  @media only screen and (max-width: 960px) {   
@@ -735,6 +779,18 @@ footer a:hover{
     
 }
 
+@media only screen and (max-width: 700px) {
+    .LeftText {
+        margin-right: 60px;
+    }
+    
+    .RightText {
+       margin-right: 60px; 
+    }
+    
+    
+}
+
 @media only screen and (max-width: 600px) {
    nav a {
        font-size: 12px;
@@ -758,6 +814,38 @@ footer a:hover{
     
     .Achievements div:first-of-type {
         border: 10px solid turquoise;
+    }
+    
+    .BespokeGrid img {
+        max-width: 350px;
+    }
+    
+    #HallmarkLogo {
+        max-width: 350px;
+        margin-left: 0;
+    }
+    
+    .BespokeGrid video {
+        width: 350px;
+        height: auto;
+        margin-left: 40px;
+    }
+    
+    #Persona {
+        width: 350px;
+    }
+    
+    #FinalPrototype {
+         width: 350px;
+    }
+    
+    #Mindmap {
+        width: 60%;
+        margin-left: 97px;
+    }
+    
+    .Arrow {
+        display: none;
     }
     
 }
