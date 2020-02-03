@@ -543,6 +543,28 @@ footer a:hover{
         margin-bottom: 50px;
         width: 100%;
     }
+    
+    #GroupPic {
+        width: 60%;
+        height: auto;
+    }
+    
+    .ProjectGrid section:last-child {
+        border: none;
+    }
+    
+    #Astronomy main{
+        margin-left: 40px;
+    }
+    
+    #BlackHoleGraph {
+        display: none;
+    }
+    
+    #GroupPic {
+        display: none;
+    }
+ 
  
 }
 
@@ -622,7 +644,10 @@ footer a:hover{
         position: absolute; top: 416px; left: 400px;
     }
     
-    
+    #Artwork {
+        grid-template-columns: 1fr;
+        grid-row: 2;
+    }
 }
     
 @media only screen and (max-width: 915px) { 
@@ -702,7 +727,11 @@ footer a:hover{
     .Skills ul:last-child {
         margin-top: 0;
     }
-    
+   
+    #Astronomy div:first-of-type {
+        grid-template-columns: 1fr;
+        grid-row: 2;
+    }
     
 }
 
