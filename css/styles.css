@@ -126,7 +126,7 @@ nav a {
    grid-template-columns: 2fr 1fr;
 }
 
-.Introduction {
+.IntroGrid div:first-child {
     padding: 50px;
 }
 
@@ -140,11 +140,10 @@ nav a {
 .AboutMe{
     display: grid;
     grid-template-columns: 0.8fr 2.3fr;
-    padding-left: 50px;
-    padding-bottom: 50px;
+    padding: 0px 0px 50px 50px;
 }
 
-.MeText {
+.AboutMe div {
     padding-right: 70px;
 }
 
@@ -152,7 +151,7 @@ nav a {
     border-top: 10px solid turquoise;
 }
 
-.Interested {
+.IntroGrid h3 {
     padding-bottom: 20px;
 }
 
@@ -373,29 +372,38 @@ footer a:hover{
     grid-template-columns: 53% 20% 20%;
 }
 
+.education div:first-of-type {
+    padding-left: 19px;  
+}
+
+.education div:first-of-type ul {
+    border-bottom: 10px solid turquoise;
+    padding-bottom: 30px;
+}
+
 .workExperience {
     padding: 20px 50px 0px 50px;
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
-.WorkVideo{
+.workExperience img {
+    max-width: 350px;
+    padding: 30px 0px 0px 20px;
+}
+
+.workExperience video{
     margin: 50px 0px 0px 20px;
 }
 
-.WorkInfo ul {
+.workExperience div:last-of-type ul {
     border-right: 10px solid turquoise;
     margin-right: 34px;
     padding: 0px 50px 0px 10px;
 }
 
-.WorkInfo {
+.workExperience div:last-of-type {
     padding-top: 5px;
-}
-
-.WorkPhoto {
-    max-width: 350px;
-    padding: 30px 0px 0px 20px;
 }
 
 .Achievements {
@@ -409,34 +417,22 @@ footer a:hover{
     padding-right: 84px;
 }
 
-.AchieveInfo {
+.Achievements div:first-of-type {
     border-right: 10px solid turquoise;
     border-top: 10px solid turquoise;
     padding: 30px 40px 0px 20px;
     margin-right: 80px;
 }
 
-.EduInfo {
-    padding-left: 19px;  
-}
-
-.EduInfo ul {
-    border-bottom: 10px solid turquoise;
-    padding-bottom: 30px;
-}
-
-.EducationPhoto1 {
+.EducationPhoto {
     transform: rotate(90deg);
     margin: 80px 20px 20px 60px;
     display: block;
     max-width: 315px;
 }
 
-.EducationPhoto2 {
-    transform: rotate(90deg);
+#EducationPhoto2 {
     margin: 50px 20px 20px 50px;*/
-    display: block;
-    max-width: 315px;
 }
 
 .Skills {
@@ -447,7 +443,7 @@ footer a:hover{
     grid-template-columns: 1fr 1fr;
 }
 
-.SkillsTwo {
+.Skills ul:last-child {
     margin-top: 67px;
 }
     
