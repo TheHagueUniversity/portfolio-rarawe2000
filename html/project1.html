@@ -122,26 +122,7 @@
                  <button class="LeftButton" onclick="plusDivs(-1)">&#10094;</button>
                  <button class="RightButton" onclick="plusDivs(+1)">&#10095;</button>
              </div>
-             
-              <script>
-                    var pictureIndex = 1;
-                    displayImage(pictureIndex);
-
-                    function plusDivs(n) {
-                      displayImage(pictureIndex += n);
-                    }
-
-                    function displayImage(n) {
-                      var i;
-                      var x = document.getElementsByClassName("Slideshow1");
-                      if (n < 1) {pictureIndex = x.length} ;
-                      for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
-                      }
-                      if (n > x.length) {pictureIndex = 1}
-                      x[pictureIndex-1].style.display = "block";
-                      }
-                 </script>
+             <script src = "../js/project1_slideshow.js"></script>
              
              <div class="RightText">
                <h3>Ideate</h3>
