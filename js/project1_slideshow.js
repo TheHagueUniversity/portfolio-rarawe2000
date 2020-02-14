@@ -7,7 +7,7 @@ function plusDivs(n) {
 
 function displayImage(n) {
   var i;
-  var x = document.getElementsByClassName("Slideshow1");
+  var x = document.getElementsByClassName("slideshow");
   if (n < 1) {pictureIndex = x.length} ;
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
