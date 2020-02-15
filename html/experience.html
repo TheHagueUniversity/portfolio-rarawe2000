@@ -3,6 +3,7 @@
     
     <head>
     <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
         <title>Experience</title>
         <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Montserrat:400,500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
@@ -24,8 +25,8 @@
 <!-- ***************  EDUCATION  **************** -->
         <section class="education">
          <div>
-          <h1>Education</h1>
-            <ul>
+          <h2>Education</h2>
+            <ul class= "education-list">
                   <li>
                     <h3>Gymnasium Taunusstein - Taunusstein, Germany</h3>
                     <p>Abitur 2018 (final grade: 1.1)</p>
@@ -46,14 +47,8 @@
          
         <!-- ***************  WORK EXPERIENCE  **************** --> 
         <section class="work-experience">
-         <div>
-             <img alt="Work Picture" src="../pictures/work.jpg">
-             <video width = 350px height=auto muted autoplay loop>
-                <source src="../video/Work.mp4" type="video/mp4">
-             </video>
-         </div>
          <div class=work-info>
-          <h1>Work Experience</h1>
+          <h2>Work Experience</h2>
           <ul>
               <li>
                 <h3>Internship at 'Verlagsgruppe Rhein-Main' 2015 - Mainz, Germany (2 weeks)</h3>
@@ -86,12 +81,22 @@
               </li> 
           </ul>  
          </div>
+         <div>
+          <div>
+              <img alt="Work Picture" src="../pictures/work.jpg">
+          </div>
+          <div>
+              <video muted autoplay loop>
+                <source src="../video/Work.mp4" type="video/mp4">
+              </video>
+            </div>
+        </div>
         </section>
          
          <!-- ***************  ACHIEVEMENTS  **************** -->
         <section class="achievements">
          <div>
-          <h1>Achievements</h1>
+          <h2>Achievements</h2>
             <ul>
                   <li>
                     <h3>Certificates</h3>
@@ -114,14 +119,14 @@
                   </li>
             </ul>
          </div>
-         <div><img alt="Logo" src="../pictures/logo.jpg"></div>
+         <img alt="Logo" src="../pictures/logo.jpg">
         </section>
          
          <!-- ***************  Skills  **************** --> 
         <section class="skills">
-        
-          <ul>
-              <h1>Skills</h1>
+          <h2>Skills</h2>
+          <div class = "skills-container">
+            <ul>
               <li>
                 <h3>Programming</h3>
                 <p>Python, HTML/CSS, Processing</p>
@@ -136,9 +141,9 @@
                 <h3>Methods</h3>
                 <p>Design Thinking, Empathizing, Prototyping, User Research (Ethnography), Testing (User Trials), Converging and Diverging Techniques</p>
               </li>
-          </ul>
-              
-          <ul>
+            </ul>
+                
+            <ul>
               <li>
                 <h3>Languages</h3>
                 <p>German, English, French, Spanish</p>
@@ -154,6 +159,7 @@
                   <p>Goal-oriented, Determined, Passionate, Curious, Adventurous, Open-minded, Motivated, Responsible, Time Management</p>
               </li>
           </ul>
+        </div>
       </section>
          
      </main> 

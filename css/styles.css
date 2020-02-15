@@ -7,35 +7,41 @@ body {
     color: black;
     text-align: left;
     margin: 0;
-    margin-top: 60px;
-    height: 100vh;
+}
+
+h2 {
+    font-size: 3.9vw;
+}
+
+h3{
+    font-size: 1.8vw;
+}
+
+p{
+    font-size: 1.5vw;
+}
+
+a{
+    font-size: 1.9vw;
 }
 
 /*Navigation--------------------------------------------------------------*/
 nav {
   display: flex;
-  justify-content: center;
-  color: white;    
+  justify-content: center; 
   background: black;
   overflow: hidden;
   font-family: 'Major Mono Display', monospace;
   position: fixed;
   top: 0;
   width: 100%;
-  color: -webkit-link;
-  z-index: 100;   
-}
-
-h2 {
-    font-size: 40px;
+  z-index: 1;
 }
 
 nav a {
-  float: left;
   text-align: center;
-  padding: 20px 20px;
+  padding: 1.8vw;
   text-decoration: none;
-  font-size: 20px;
   color: white; 
 }
 
@@ -64,6 +70,43 @@ nav a {
   color: black; 
 }
 
+/*Home/Index--------------------------------------------------------------------------------*/
+.trailer {
+    background: black;
+}
+
+.trailer video {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.about {
+    border-top: 20px solid turquoise;
+    background-color: black;
+}
+
+.introduction {
+    margin: 0 5% 0 5%;
+    text-align: center;
+    color: black;
+    background-color: white;
+    padding: 70px 70px 100px 70px; 
+}
+
+.button {
+    color: black;
+    text-decoration: underline solid black;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.button:hover{
+    color: #29a3a3;
+    text-decoration: underline solid #29a3a3;
+}
+
 /*Project Gallery--------------------------------------------------------*/
 
 .project-gallery {
@@ -74,14 +117,14 @@ nav a {
 }
 
 .project-gallery > div {
-    height: 590px;
     width: 100%;
     overflow: hidden;
     padding-top: 20px;
     position: relative;
 }
 
-.project-gallery div a video{
+.project-gallery .gif{
+    height: 100%;
     width: 100%;
 }
 
@@ -103,7 +146,6 @@ nav a {
   margin: 0;
   white-space: nowrap; 
   color: white;
-  font-size: 18px;
   position: relative;
   transition: .5s ease; 
   top: 90%;
@@ -115,36 +157,38 @@ nav a {
 .intro-grid {
    display:grid;
    grid-template-columns: 2fr 1fr;
+   margin-top: 20px;
 }
 
-.intro-grid div:first-child {
-    padding: 50px;
+.my-intro {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin: 50px;
+    border-bottom: 10px solid turquoise;
 }
 
 .my-picture {
+    grid-column-start: 2;
+    grid-row-start: 1;
     border-radius: 50%;
     display: block;
     margin: auto;
-    max-width: 300px;
-    padding-right: 30px;
+    width: 29vw;
 }
 
 .about-me{
     display: grid;
     grid-template-columns: 0.8fr 2.3fr;
-    padding: 0px 0px 50px 50px;
+    margin: 0px 0px 50px 50px;
 }
 
 .about-me div {
-    padding: 0px 70px 0px 40px;
-}
-
-.intro-line {
-    border-top: 10px solid turquoise;
+    margin: 0px 70px 0px 40px;
+    border-bottom: 10px solid turquoise;
 }
 
 .intro-grid h3 {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .my-photos {
@@ -159,38 +203,41 @@ nav a {
    max-width: 100%;
 }
 
-/*4 Projects*/
+/*Projects Gloabl--------------------------------------------------------------*/
 
 .project-grid {
     display:grid;
     grid-template-columns: 1fr 2fr;
-    padding: 70px 90px 80px 90px;
+    margin: 70px 90px 80px 90px;
 }
 
-.project-grid video {
-    height: 370px;
-    width:auto;
+.project-images{
+    grid-row: 1;
+    grid-column: 1;
 }
 
-.project-grid section:nth-child(2n) {
-    border-right: 10px solid turquoise;
+.project-desc{
+    grid-row: 1;
+    grid-column: 2;
     padding: 0px 50px 30px 30px;
-}
-
-.project-grid section:last-child {
+    border-right: 10px solid turquoise;
     border-bottom: 10px solid turquoise;  
-    margin: 0px 0px 4px 40px;;
 }
 
 .project-grid img {
-    width:350px;
+    width: 35vw;
     margin-top: 30px;
+}
+
+.project-grid video {
+    height: 37vw;
+    width:auto;
 }
 
 /*Project Processing--------------------------------------------*/
 
 #creative-artwork {
-    height: 350px;
+    height: 20vw;
     width: auto;
     margin-top: 20px;
     border: 5px solid black;
@@ -198,22 +245,43 @@ nav a {
 
 /*Project Astronomy--------------------------------------------*/
 
-#blackhole-graph {
-    width: 242px;
+#group-pic {
+    width: 44vw;
     height: auto;
-    margin-bottom: 20px;
 }
 
-#group-pic {
-    width: auto;
-    height: 232.031px;
-    margin: 0px 0px 20px 50px;
+/*Project Fashion--------------------------------------------*/
+#fashion-video{
+    width: 31vw;
+    height: auto;
 }
 
 /*Project Bespoke--------------------------------------------*/
 
 .bespoke {
-    padding: 70px 90px 80px 90px;;
+    margin: 100px 90px 80px 90px;
+}
+
+.bespoke-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin: 30px;
+}
+
+.bespoke-grid img, .bespoke-grid video{
+    width: 35vw;
+    height: auto;
+    margin-top: 25px;
+    border: 2px solid black;  
+}
+
+.left-text {
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.right-text {
+    margin-left: 40px;
 }
 
 .project-overview {
@@ -226,16 +294,14 @@ nav a {
 }
 
 .arrow {
-    width: 80px;
-    font-size: 25px;
-    font-stretch: ultra-expanded;
+    width: 4vw;
     height: auto;
-    margin-left: 40px;
-    margin-bottom: -5px;
+    margin-left: 10px;
 }
 
 .process-description {
-    margin-top: 30px;
+    margin: 30px 10px 0 0;
+    padding: 0;
 }
 
 .phase {
@@ -246,49 +312,9 @@ nav a {
     margin: 0;
 }
 
-.bespoke-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    margin: 30px;
-}
-
-.bespoke-grid img{
-    width:380px;
-    border: 2px solid black;  
-}
-
-.left-text {
-    padding-right: 40px;
-    padding-bottom: 20px;
-}
-
-.right-text {
-    margin-left: 40px;
-}
-
-#mindmap {
-    width: 380px;
-    height: auto;
-    transform: rotate(-90deg);
-    grid-row: 1 / -1; 
-    align-self: center; 
-    margin: -60px 0px -50px 70px;
-}
-
-#persona {
-    width: 600px;
-    height: auto;
-    align-self: center; 
-}
-
 .slideshow {
     margin-top: 15px;
     margin-bottom: 30px;
-}
-
-#slideshow-container img{
-    width: 537px;
 }
 
 #slideshow-container button {
@@ -301,26 +327,7 @@ nav a {
     margin-left: 70px;
     width: 350px;
 }
-
-#user-testing{
-   transform: rotate(180deg);
-   width: 537px;    
-}
-
-#proto-video {
-  border: 2px solid black;  
-  margin-bottom: 30px;
-}
-
-#final-prototype {
-    width: 530px;
-    height: auto;
-    padding: 35px 20px;
-    margin-left: 40px;
-    margin-top: 20px;
-}
-
-/*Contact Info*/
+/*Contact Info/Footer ----------------------------------------------------------------------*/
 .contact {
   color: white;    
   background: #046E8F;
@@ -328,23 +335,18 @@ nav a {
 }
 
 footer {
-  display: flex;
-  justify-content: center;
   color: white;    
   background: black;
   overflow: hidden;
   font-family: 'Major Mono Display', monospace;
-  padding-top: 40px;
-  padding-bottom: 0;  
+  padding: 40px 0 40px 0; 
   text-align: center;    
 }
 
 footer a {
-  float: left;
   text-align: center;
-  padding: 20px 20px;
+  padding: 2px 20px 2px 20px;
   text-decoration: none;
-  font-size: 20px;
   color: white;
 }
 
@@ -354,38 +356,48 @@ footer a:hover{
 
 /*Education / Work Experience----------------------------------------------------------------------------------*/
 .education {
-    padding: 50px 50px 0px 50px;
+    margin: 70px 50px 0px 50px;
     display:grid;
-    grid-template-columns: 53% 20% 20%;
+    grid-template-columns: 40vw 30vw 30vw;
 }
 
-.education div:first-of-type {
-    padding-left: 19px;  
-}
-
-.education div:first-of-type ul {
+.education-list {
     border-bottom: 10px solid turquoise;
     padding-bottom: 30px;
 }
 
+.education-photo {
+    display: block;
+    margin: 25px auto;
+    width: 20vw;
+    height: auto;
+}
+
 .work-experience {
-    padding: 20px 50px 0px 50px;
+    margin: 20px 50px 0px 50px;
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
 .work-experience img {
-    max-width: 350px;
-    padding: 30px 0px 0px 20px;
+    width: 35vw;
+    margin: 30px 0px 0px 20px;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 .work-experience video{
     margin: 50px 0px 0px 20px;
+    width: 35vw; 
+    height: auto;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 .work-info {
-    padding-top: 5px;
-    margin-left: 40px;
+    margin: 5px 0 0 40px;
+    grid-column: 2;
+    grid-row: 1;
 }
 
 .work-info ul {
@@ -397,82 +409,556 @@ footer a:hover{
 .achievements {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 20px 0px 0px 70px;
+    margin: 20px 0px 0px 70px;
 }
 
 .achievements img {
-    max-width:600px;
-    padding-right: 84px;
+    width: 40vw;
+    margin-right: 84px;
 }
 
-.achievements div:first-of-type {
+.achievements div{
     border-right: 10px solid turquoise;
     border-top: 10px solid turquoise;
     padding: 30px 40px 0px 20px;
     margin-right: 80px;
 }
 
-.education-photo {
-    transform: rotate(90deg);
-    margin: 80px 20px 20px 60px;
-    display: block;
-    max-width: 315px;
-}
-
-#EducationPhoto2 {
-    margin: 50px 20px 20px 50px;
-}
-
 .skills {
     padding: 20px 50px 50px 50px;
     border: 10px solid turquoise;
     margin: 40px 80px 60px 80px;
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.skills ul:last-child {
-    margin-top: 67px;
-}
-    
- /*Home/Index--------------------------------------------------------------------------------*/
-.trailer {
-  background: black;
-}
-
-.trailer video {
-    margin: 0 auto;
-    display: block;
-}
-
-.about {
-    border-top: 20px solid turquoise;
-    background-color: black;
-}
-
-.introduction {
-    margin: 0 5% 0 5%;
     text-align: center;
-    color: black;
-    background-color: white;
-    padding: 70px 70px 100px 70px; 
 }
 
-.button {
-  color: black;
-  text-decoration: underline solid black;
-  border-radius: 4px;
-  font-weight: bold;
-  font-size:20px;
+.skills ul{
+    list-style-type: none;
 }
 
-.button:hover{
-  color: #29a3a3;
-  text-decoration: underline solid #29a3a3;
+.skills-container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 /*media queries -------------------------------------------------------------------------------------------------------------------------------------*/
 
+/*Handheld Global --------------------------------------------------------*/
+@media only screen and (max-width: 1023px){
+    h2 {
+        font-size: 5.8vw;
+    }
+
+    h3{
+        font-size: 2.9vw;
+    }
+
+    p{
+        font-size: 2.5vw;
+    }
+
+    a{
+        font-size: 3vw;
+    }
+
+    /*Nav-------------------------------------------------------------------*/
+    .nav1:hover, .nav2:hover, .nav3:hover, .nav4:hover, .nav5:hover{
+        background: none;
+    }
+
+    /*Project Gallery--------------------------------------------------------*/
+    .overlay {
+        position: absolute;  
+        background-color: rgba(0,0,0,0.2);
+        overflow: visible; 
+        bottom: 0;
+        height: 100%;
+        width: 100%;    
+      }
+}
+
+/*Tablet -------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1023px) and (min-width: 720px){
+    /*Project Gallery--------------------------------------------------------*/
+
+    .project-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    /*About Me--------------------------------------------------------------------*/
+
+    .intro-grid {
+        grid-template-columns: 60vw 40vw;
+    }
+    
+    .my-intro {
+        margin: 25px;
+    }
+    
+    .my-picture {
+        width: 31vw;
+    }
+    
+    .about-me{
+        display: grid;
+        grid-template-columns: 0.8fr 2.3fr;
+        margin: 0 0 50px 25px;
+    }
+    
+    .about-me div {
+        margin: 0px 25px 0px 40px;
+    }
+
+    /*Education / Work Experience----------------------------------------------------------------------------------*/
+    
+    .education {
+        grid-template-columns: 40vw 20vw 20vw;
+        gap: 15px
+    }
+
+    .education-photo {
+        margin: 40px 0 0 0;
+    }
+
+    .work-experience img {
+        margin: 30px 0 0 0;
+    }
+
+    .work-experience video{
+        margin: 50px 0 0 0;
+    }
+
+    .work-info {
+        margin: 5px 0 0 40px;
+    }
+
+    .work-info ul {
+        border-right: 10px solid turquoise;
+        margin-right: 0;
+        padding: 0 50px 0 0;
+    }
+
+    .achievements {
+        display: block;
+    }
+
+    .achievements img {
+        display: block;
+        width: 45vw;
+        margin: 0 auto;
+    }
+
+    .achievements div{
+        padding: 0;
+        margin-right: 50px;
+    }
+
+    .skills {
+        padding: 20px 50px 50px 50px;
+        margin: 20px 25px 45px 25px;
+    }
+
+    .skills-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*Projects Gloabl--------------------------------------------------------------*/
+
+    .project-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+        margin: 55px 25px 40px 25px;
+    }
+
+    .project-images{
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .project-desc{
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .project-grid img {
+        width: 25vw;
+        margin-top: 30px;
+    }
+
+    .project-grid video {
+        height: 37vw;
+        width:auto;
+    }
+
+    /*Project Astronomy--------------------------------------------*/
+    
+    #group-pic {
+        width: 34vw;
+    }
+
+    /*Project Processing--------------------------------------------*/
+
+    #creative-artwork {
+        height: 16vw;
+        margin-top: 50px;
+    }
+
+    /*Project Bespoke--------------------------------------------*/
+
+    .bespoke {
+        margin: 100px 25px auto;
+    }
+
+    .bespoke h3 {
+        text-align: center;
+    }
+
+    .project-overview {
+        padding: 30px 25px 20px 25px;
+        margin-top: 25px;
+        border-bottom: none;
+    }
+
+    .project-overview p{
+        font-size: 1.9vw;
+    }
+
+    .arrow {
+        width: 3vw;
+        margin-left: 5px;
+    }
+
+    .process-description {
+        margin: 30px 5px 0 0;
+        padding: 0;
+    }
+
+    .process-description li{
+        margin-bottom: 5px;
+        font-size: 1.5vw;
+    }
+
+    .phase {
+        margin: 10px;
+    }
+
+    .phase p {
+        margin: 0;
+    }
+
+    .bespoke-grid {
+        display: grid;
+        grid-template-columns: minmax(0,1fr);
+        margin: 0;
+    }
+
+    .bespoke-grid img, .bespoke-grid video{
+        display: block;
+        width: 50vw;
+        margin: 15px auto;
+    }
+
+    #mindmap{
+        grid-row: 2;
+    }
+
+    
+    #hallmark-logo {
+        margin: 5px auto;
+    }
+
+    .left-text {
+        margin: 15px 0 0 0;
+        border-top: 10px solid turquoise;
+    }
+
+    .right-text {
+        margin: 15px  0 0 0;
+        border-top: 10px solid turquoise;
+    }
+
+    .slideshow-buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #slideshow-container button {
+        display: inline-block;
+        font-size: 20px;
+        margin: 5px 15px auto
+    }
+
+}
+
+/*Phone -------------------------------------------------------------------------------*/
+@media only screen and (max-width: 719px) and (min-width: 320px){
+    /*Project Gallery--------------------------------------------------------*/
+
+    .project-gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
+
+    /*About Me--------------------------------------------------------------------*/
+
+    .intro-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+    }
+    
+    .my-intro {
+        margin: 0 10px 10px 10px;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    
+    .my-picture {
+        width: 55vw;
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    
+    .about-me{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        margin: 0 10px 10px 10px;
+    }
+    
+    .about-me div {
+        margin: 0px 10px 0px 10px;
+    }
+
+    /*Education / Work Experience----------------------------------------------------------------------------------*/
+    .education {
+        display: block;
+        margin: 35px 10px auto;
+        border-bottom: 10px solid turquoise;
+        text-align: center;
+    }
+
+    .education-list {
+        border-bottom: none;
+        padding: 0;
+        margin-bottom: 15px;
+        list-style-type: none;
+    }
+
+    .education-photo {
+        display: block;
+        margin: 15px auto;
+        width: 45vw;
+        height: auto;
+    }
+
+    .work-experience {
+        margin: 0 10px auto;
+        display: block;
+        border-bottom: 10px solid turquoise;
+    }
+
+    .work-experience img {
+        display: block;
+        margin: 15px auto;
+        width: 45vw;
+    }
+
+    .work-experience video{
+        display: block;
+        margin: 15px auto;
+        width: 45vw;
+    }
+
+    .work-info {
+        margin: 5px 0 0 0;
+        text-align: center;
+    }
+
+    .work-info ul {
+        border: none;
+        margin: 5px 15px auto;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .achievements {
+        display: block;
+        margin: 0 10px auto;
+        border-bottom: 10px solid turquoise;
+        text-align: center;
+    }
+
+    .achievements ul {
+        margin: 5px 15px auto;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .achievements img {
+        margin: 15px auto;
+        width: 45vw;
+    }
+
+    .achievements div{
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .skills {
+        padding: 0;
+        border: none;
+        margin: 0 10px auto;
+        text-align: center;
+    }
+
+    .skills ul{
+        padding: 0;
+        list-style-type: none;
+    }
+
+    /*Projects Global--------------------------------------------------------------*/
+
+    .project-grid {
+        display: block;
+        margin: 35px 15px 20px 15px;
+    }
+
+    .project-images{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-desc{
+        grid-row: 1;
+        grid-column: 2;
+        border: none;
+        padding: 0;
+    }
+
+    .project-desc h2{
+        text-align: center;
+    }
+
+    .project-grid img {
+        display: inline-block;
+        width: 20vw;
+        margin: 5px 5px 0 0;
+    }
+
+    .project-grid video {
+        height: 37vw;
+        width:auto;
+    }
+
+    /*Project Astronomy--------------------------------------------*/
+    
+    #group-pic {
+        width: 30vw;
+    }
+    
+    /*Project Processing--------------------------------------------*/
+
+    #creative-artwork {
+        height: 35vw;
+    }
+
+    /*Project Fashion--------------------------------------------*/
+    #fashion-video{
+        width: 70vw;
+        height: auto;
+    }
+
+    /*Project Bespoke--------------------------------------------*/
+
+    .bespoke {
+        margin: 50px 15px auto;
+    }
+
+    .bespoke ul{
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .bespoke li{
+        margin-bottom: 5px;
+        font-size: 1.9vw;
+    }
+
+    .bespoke h3 {
+        text-align: center;
+    }
+
+    .project-overview {
+        grid-template-columns: repeat(5, minmax(0,1fr));
+        padding: 15px 0 0 0;
+        margin-top: 25px;
+        border-bottom: none;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .process-description {
+        margin: 10px 5px 0 0;
+        padding: 0;
+    }
+
+    .phase {
+        margin: 10px;
+    }
+
+    .phase p {
+        margin: 0;
+    }
+
+    .bespoke-grid {
+        display: grid;
+        grid-template-columns: minmax(0,1fr);
+        margin: 0;
+    }
+
+    .bespoke-grid img, .bespoke-grid video{
+        display: block;
+        width: 50vw;
+        margin: 15px auto;
+    }
+
+    #mindmap{
+        grid-row: 2;
+    }
+
+    
+    #hallmark-logo {
+        width: 175px;
+        margin: 5px auto;
+    }
+
+    .left-text {
+        margin: 15px 0 0 0;
+        border-top: 10px solid turquoise;
+    }
+
+    .right-text {
+        margin: 15px  0 0 0;
+        border-top: 10px solid turquoise;
+    }
+
+    .slideshow-buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #slideshow-container button {
+        display: inline-block;
+        font-size: 20px;
+        margin: 5px 15px auto
+    }
+}
 
 
 
