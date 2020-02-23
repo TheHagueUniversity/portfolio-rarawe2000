@@ -95,6 +95,10 @@ nav a {
     padding: 70px 70px 100px 70px; 
 }
 
+h2.introduction {
+    font-size: 0.8;
+}
+
 .button {
     color: black;
     text-decoration: underline solid black;
