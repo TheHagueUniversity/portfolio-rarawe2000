@@ -365,7 +365,7 @@ footer a:hover{
 .education {
     margin: 70px 50px 0px 50px;
     display:grid;
-    grid-template-columns: 50vw 20vw 25vw;
+    grid-template-columns: 50vw 25vw 20vw;
 }
 
 .education-list {
@@ -376,7 +376,7 @@ footer a:hover{
 .education-photo {
     display: block;
     margin: 25px auto;
-    width: 20vw;
+    width: 17vw;
     height: auto;
 }
 
