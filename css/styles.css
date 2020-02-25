@@ -7,30 +7,45 @@ body {
     color: black;
     text-align: left;
     margin: 0;
-    margin-top: 60px;
 }
 
-/*Navigation*/
+h1 {
+    font-size: 4.1vw;
+}
+
+h2 {
+    font-size: 3.5vw;
+}
+
+h3{
+    font-size: 1.8vw;
+}
+
+p{
+    font-size: 1.5vw;
+}
+
+a{
+    font-size: 1.9vw;
+}
+
+/*Navigation--------------------------------------------------------------*/
 nav {
   display: flex;
-  justify-content: center;
-  color: white;    
+  justify-content: center; 
   background: black;
   overflow: hidden;
   font-family: 'Major Mono Display', monospace;
   position: fixed;
   top: 0;
   width: 100%;
-  color: -webkit-link;
-  z-index: 100;   
+  z-index: 1;
 }
 
 nav a {
-  float: left;
   text-align: center;
-  padding: 20px 20px;
+  padding: 1.8vw;
   text-decoration: none;
-  font-size: 20px;
   color: white; 
 }
 
@@ -59,24 +74,61 @@ nav a {
   color: black; 
 }
 
-/*Projects*/
+/*Home/Index--------------------------------------------------------------------------------*/
+.trailer {
+    background: black;
+}
 
-.ProjectGallery {
+.trailer video {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.about {
+    border-top: 20px solid turquoise;
+    background-color: black;
+}
+
+.introduction {
+    margin: 0 5% 0 5%;
+    text-align: center;
+    color: black;
+    background-color: white;
+    padding: 70px 70px 100px 70px; 
+}
+
+.button {
+    color: black;
+    text-decoration: underline solid black;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.button:hover{
+    color: #29a3a3;
+    text-decoration: underline solid #29a3a3;
+}
+
+/*Project Gallery--------------------------------------------------------*/
+
+.project-gallery {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(4, 1fr);
     background-color: black;
 }
 
-.ProjectGallery>div {
-    height: 590px;
+.project-gallery > div {
     width: 100%;
     overflow: hidden;
     padding-top: 20px;
     position: relative;
 }
 
-.ProjectGallery div a video{
+.project-gallery .gif{
+    height: 100%;
     width: 100%;
 }
 
@@ -89,137 +141,158 @@ nav a {
   width: 100%;    
 }
 
-.project1Container:hover .overlay {
+.project-container:hover .overlay {
   bottom: 0;
   height: 100%;
-}
-
-.project2Container:hover .overlay {
-  bottom: 0;
-  height: 100%; 
-}
-
-.project3Container:hover .overlay {
-  bottom: 0;
-  height: 100%;
-}
-
-.project4Container:hover .overlay {
-  bottom: 0;
-  height: 100%; 
 }
 
 .text {
+  margin: 0;
   white-space: nowrap; 
   color: white;
-  font-size: 18px;
   position: relative;
   transition: .5s ease; 
   top: 90%;
   text-align: center;    
 }
 
-/*About Me*/
+/*About Me--------------------------------------------------------------------*/
 
-.IntroGrid {
+.intro-grid {
    display:grid;
    grid-template-columns: 2fr 1fr;
+   margin-top: 20px;
 }
 
-.IntroGrid div:first-child {
-    padding: 50px;
+.my-intro {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin: 50px;
+    border-bottom: 10px solid turquoise;
 }
 
-.MyPicture {
+.my-picture {
+    grid-column-start: 2;
+    grid-row-start: 1;
     border-radius: 50%;
     display: block;
     margin: auto;
-    max-width: 300px;
-    padding-right: 30px;
+    width: 29vw;
 }
 
-.AboutMe{
+.about-me{
     display: grid;
     grid-template-columns: 0.8fr 2.3fr;
-    padding: 0px 0px 50px 50px;
+    margin: 0px 0px 50px 50px;
 }
 
-.AboutMe div {
-    padding: 0px 70px 0px 40px;
+.about-me div {
+    margin: 0px 70px 0px 40px;
+    border-bottom: 10px solid turquoise;
 }
 
-.IntroLine {
-    border-top: 10px solid turquoise;
+.intro-grid h3 {
+    margin-bottom: 20px;
 }
 
-.IntroGrid h3 {
-    padding-bottom: 20px;
-}
-
-.MyPhotos {
+.my-photos {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-content: center;
     border-top: 20px solid black;
 }
 
-.aboutPhoto {
+.about-photo {
    width: 100%;
    max-width: 100%;
 }
 
-/*4 Projects*/
-
-.ProjectGrid {
-    display:grid;
-    grid-template-columns: 1fr 2fr;
-    padding: 70px 90px 80px 90px;
+iframe {
+    margin: 0 auto;
 }
 
-.ProjectGrid video {
-    height: 370px;
+/*Projects Gloabl--------------------------------------------------------------*/
+
+.project-grid {
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 70px 90px 80px 90px;
+}
+
+.project-images{
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.project-desc{
+    grid-row: 1;
+    grid-column: 2;
+    padding: 0px 50px 30px 30px;
+    border-right: 10px solid turquoise;
+    border-bottom: 10px solid turquoise;  
+}
+
+.project-grid img {
+    width: 35vw;
+    margin-top: 30px;
+}
+
+.project-grid video {
+    height: 37vw;
     width:auto;
 }
 
-.ProjectGrid section:nth-child(2n) {
-    border-right: 10px solid turquoise;
-    padding: 0px 50px 30px 30px;
-}
+/*Project Processing--------------------------------------------*/
 
-.ProjectGrid section:last-child {
-    border-bottom: 10px solid turquoise;  
-    margin-bottom: 0px 0px 4px 40px;;
-}
-
-#CreativeArtwork {
-    height: 350px;
+#creative-artwork {
+    height: 20vw;
     width: auto;
     margin-top: 20px;
     border: 5px solid black;
 }
 
-.ProjectGrid img {
-    width:350px;
-    margin-top: 30px;
+/*Project Astronomy--------------------------------------------*/
+
+#group-pic {
+    width: 44vw;
+    height: auto;
 }
 
-#BlackHoleGraph {
-    width: 242px;
+/*Project Fashion--------------------------------------------*/
+#fashion-video{
+    width: 31vw;
     height: auto;
+}
+
+/*Project Bespoke--------------------------------------------*/
+
+.bespoke {
+    margin: 100px 90px 80px 90px;
+}
+
+.bespoke-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin: 30px;
+}
+
+.bespoke-grid img, .bespoke-grid video{
+    width: 35vw;
+    height: auto;
+    margin-top: 25px;
+    border: 2px solid black;  
+}
+
+.left-text {
+    margin-right: 40px;
     margin-bottom: 20px;
 }
 
-#GroupPic {
-    width: auto;
-    height: 232.031px;
-    margin: 0px 0px 20px 50px;
+.right-text {
+    margin-left: 40px;
 }
 
-.Bespoke {
-    padding: 70px 90px 80px 90px;;
-}
-
-.ProjectOverview {
+.project-overview {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     border-bottom: 10px solid turquoise;  
@@ -228,141 +301,59 @@ nav a {
     margin-top: 40px;
 }
 
-.Arrow {
-    width: 80px;
+.arrow {
+    width: 4vw;
     height: auto;
-    margin-left: 40px;
-    margin-bottom: -5px;
+    margin-left: 10px;
 }
 
-.ProcessDescription {
-    margin-top: 30px;
+.process-description {
+    margin: 30px 10px 0 0;
+    padding: 0;
 }
 
 .phase {
     margin: 10px;
 }
 
-.BespokeGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    margin: 30px;
+.phase p {
+    margin: 0;
 }
 
-.BespokeGrid img{
-    width:380px;
-    border: 2px solid black;  
-}
-
-#Mindmap {
-    width: 380px;
-    height: auto;
-    transform: rotate(-90deg);
-    grid-row: 1 / -1; 
-    align-self: center; 
-    margin: -60px 0px -50px 70px;
-}
-
-.LeftText {
-    padding-right: 40px;
-    padding-bottom: 20px;
-}
-
-.RightText {
-    margin-left: 40px;
-}
-
-#Persona {
-    width: 600px;
-    height: auto;
-    align-self: center; 
-}
-
-#Mindmap {
-    width: 380px;
-    height: auto;
-    transform: rotate(-90deg);
-    grid-row: 1 / -1; 
-    align-self: center; 
-    margin: -60px 0px -50px 70px;
-}
-
-#UnwrappingIdeas {
-    width: 537px; 
-}
-
-#ToolIdeas {
-    width: 537px; 
-}
-
-#Storyboard1 {
-    width: 537px; 
-}
-
-#Storyboard2 {
-    width: 537px; 
-}
-
-.Slideshow1 {
+.slideshow {
     margin-top: 15px;
     margin-bottom: 30px;
 }
 
-#SlideshowContainer1 button {
+#slideshow-container button {
     font-size: 20px;
     margin: -15px 0px 15px 0px;
 }
 
-#HallmarkLogo {
+#hallmark-logo {
     border: 0;
     margin-left: 70px;
     width: 350px;
 }
-
-#Testing2 {
-   transform: rotate(180deg);
-   width: 537px;    
-}
-
-#ProtoVideo {
-  border: 2px solid black;  
-  margin-bottom: 30px;
-}
-
-#FinalPrototype {
-    width: 530px;
-    height: auto;
-    padding: 35px 20px;
-    margin-left: 40px;
-    margin-top: 20px;
-}
-
-/*Contact Info*/
-Contact {
+/*Contact Info/Footer ----------------------------------------------------------------------*/
+.contact {
   color: white;    
   background: #046E8F;
   overflow: hidden;
 }
 
 footer {
-  display: flex;
-  justify-content: center;
   color: white;    
   background: black;
   overflow: hidden;
   font-family: 'Major Mono Display', monospace;
-  padding-top: 40px;
-  padding-bottom: 0;  
+  padding: 40px 0 40px 0; 
   text-align: center;    
 }
 
 footer a {
-  float: left;
   text-align: center;
-  padding: 20px 20px;
   text-decoration: none;
-  font-size: 20px;
   color: white;
 }
 
@@ -370,484 +361,622 @@ footer a:hover{
   background: rgba(255, 255, 255, 25%);
 }
 
-/*Education / Work Experience*/
+/*Education / Work Experience----------------------------------------------------------------------------------*/
 .education {
-    padding: 50px 50px 0px 50px;
+    margin: 70px 50px 0px 50px;
     display:grid;
-    grid-template-columns: 53% 20% 20%;
+    grid-template-columns: 50vw 20vw 25vw;
 }
 
-.education div:first-of-type {
-    padding-left: 19px;  
-}
-
-.education div:first-of-type ul {
+.education-list {
     border-bottom: 10px solid turquoise;
     padding-bottom: 30px;
 }
 
-.workExperience {
-    padding: 20px 50px 0px 50px;
+.education-photo {
+    display: block;
+    margin: 25px auto;
+    width: 20vw;
+    height: auto;
+}
+
+.work-experience {
+    margin: 20px 50px 0px 50px;
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
-.workExperience img {
-    max-width: 350px;
-    padding: 30px 0px 0px 20px;
+.work-experience img {
+    width: 35vw;
+    margin: 30px 0px 0px 20px;
+    grid-column: 1;
+    grid-row: 1;
 }
 
-.workExperience video{
+.work-experience video{
     margin: 50px 0px 0px 20px;
+    width: 35vw; 
+    height: auto;
+    grid-column: 1;
+    grid-row: 1;
 }
 
-.workExperience div:last-of-type ul {
+.work-info {
+    margin: 5px 0 0 40px;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.work-info ul {
     border-right: 10px solid turquoise;
     margin-right: 34px;
     padding: 0px 50px 0px 10px;
 }
 
-.workExperience div:last-of-type {
-    padding-top: 5px;
-    margin-left: 40px;
-}
-
-.Achievements {
+.achievements {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 20px 0px 0px 70px;
+    margin: 20px 0px 0px 70px;
 }
 
-.Achievements img {
-    max-width:600px;
-    padding-right: 84px;
+.achievements img {
+    width: 40vw;
+    margin-right: 84px;
 }
 
-.Achievements div:first-of-type {
+.achievements div{
     border-right: 10px solid turquoise;
     border-top: 10px solid turquoise;
     padding: 30px 40px 0px 20px;
     margin-right: 80px;
 }
 
-.EducationPhoto {
-    transform: rotate(90deg);
-    margin: 80px 20px 20px 60px;
-    display: block;
-    max-width: 315px;
-}
-
-#EducationPhoto2 {
-    margin: 50px 20px 20px 50px;*/
-}
-
-.Skills {
+.skills {
     padding: 20px 50px 50px 50px;
     border: 10px solid turquoise;
     margin: 40px 80px 60px 80px;
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.Skills ul:last-child {
-    margin-top: 67px;
-}
-    
- /*Home*/
-.trailer {
-  right: 0;
-  bottom: 0;
-  z-index: -100;
-  background: black;
-}
-
-.trailer video {
-    margin: 0 auto;
-    display: block;
-}
-
-.AboutGrid {
-    display: grid;
-    grid-template-columns: 5% 90% 5%;
-    border-top: 20px solid turquoise;
-}
-
-.LeftEdge {
-    background: black;
-}
-
-.RightEdge {
-    background: black;
-}
-
-.introduction {
     text-align: center;
-    color: black;
-    padding: 70px 70px 100px 70px; 
 }
 
-.introduction header h2:last-of-type {
-    margin-top: 40px;
+.skills ul{
+    list-style-type: none;
 }
 
-.introduction h1 span {
-    font-size: 40px;
-    text-align: center; 
-    background: rgba(64,224,208,0.6)
-}
-
-.introduction header h2:first-of-type {
-    font-size: 40px;
-}
-
-.button {
-  color: black;
-  text-decoration: underline solid black;
-  border-radius: 4px;
-  font-weight: bold;
-  font-size:20px;
-}
-
-.buttonText {
-    margin: 20px;
-}
-
-.Introduction button {
-  margin-left: -10px;    
-}
-
-.button:hover{
-  color: #29a3a3;
-  text-decoration: underline solid #29a3a3;
+.skills-container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 /*media queries -------------------------------------------------------------------------------------------------------------------------------------*/
 
+/*Handheld Global --------------------------------------------------------*/
+@media only screen and (max-width: 1023px){
+    h2 {
+        font-size: 5.8vw;
+    }
 
-@media only screen and (max-width: 1370px) {
-  
-    .text {
-      font-size: 17px;
-      text-align: center;    
+    h3{
+        font-size: 2.9vw;
     }
-    
-    .ProjectGallery>div {
-       height: 500px;    
+
+    p{
+        font-size: 2.5vw;
     }
-    
-    .Achievements img {
-        max-width: 620px;
+
+    a{
+        font-size: 3vw;
     }
-    
-    #Fashion {
-        grid-template-columns: 1fr;
+
+    /*Nav-------------------------------------------------------------------*/
+    .nav1:hover, .nav2:hover, .nav3:hover, .nav4:hover, .nav5:hover{
+        background: none;
     }
-    
-    #Fashion video {
-        margin-bottom: 50px;
-        width: 100%;
-    }
-    
-    #GroupPic {
-        width: 60%;
-        height: auto;
-    }
-    
-    .ProjectGrid section:last-child {
-        border: none;
-    }
-    
-    #Astronomy main{
-        margin-left: 40px;
-    }
-    
-    #BlackHoleGraph {
-        display: none;
-    }
-    
-    #GroupPic {
-        display: none;
-    }
- 
- 
+
+    /*Project Gallery--------------------------------------------------------*/
+    .overlay {
+        position: absolute;  
+        background-color: rgba(0,0,0,0.2);
+        overflow: visible; 
+        bottom: 0;
+        height: 100%;
+        width: 100%;    
+      }
 }
 
-@media only screen and (max-width: 1200px) {
-    .text {
-      font-size: 15px;
-      text-align: center;    
-    }
-    
-    .ProjectGallery>div {
-       height: 450px;    
-    }
-    
-    iframe {
-        height: 450px;
-    }
-    
-    .EducationPhoto {
-        margin-left: 0;
-    }
-    
-    #EducationPhoto2 {
-        margin-right: 40px;
-    }
-    
-    .Achievements {
-        grid-template-columns: 2fr 1fr;
-    }
-    
-    .Achievements img {
-        max-width: 400px;
-    }
-    
-    .BespokeGrid {
-        grid-template-columns: 1fr;
-    }
-    
-    .LeftText {
-        padding-right: 0;
-        padding-left: 40px;
-    }
-    
-    .BespokeGrid img {
-        margin-left: 40px;
-    }
-    
-    #Mindmap {
-        margin-left: 120px;
-    }
-    
-    .BespokeGrid video {
-        width: 537px;
-        height: auto;
-        margin-left: 40px;
-    }
-    
-    #Persona {
-        width: 537px;
-    }
-    
-    #FinalPrototype {
-         width: 537px;
-    }
-    
-}
-    
-    
-@media only screen and (max-width: 1050px) {
-    
-    .ProjectGallery>div {
-       width: 300px;
-       margin: auto;
-    }
-    
-    .ProjectGallery {
-        display: grid;
+/*Tablet -------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1023px) and (min-width: 720px){
+    /*Project Gallery--------------------------------------------------------*/
+
+    .project-gallery {
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    /*About Me--------------------------------------------------------------------*/
+
+    .intro-grid {
+        grid-template-columns: 60vw 40vw;
     }
     
-    iframe {
-        height: 500px;
+    .my-intro {
+        margin: 25px;
     }
     
-    .Achievements {
-        grid-template-columns: 1fr;
+    .my-picture {
+        width: 31vw;
     }
     
-    .Achievements img {
-       margin: 40px 0px 0px 10px;
+    .about-me{
+        display: grid;
+        grid-template-columns: 0.8fr 2.3fr;
+        margin: 0 0 50px 25px;
     }
+    
+    .about-me div {
+        margin: 0px 25px 0px 40px;
+    }
+
+    /*Education / Work Experience----------------------------------------------------------------------------------*/
     
     .education {
-        grid-template-columns: 1fr;
+        grid-template-columns: 40vw 20vw 20vw;
+        gap: 15px
     }
-    
-    .workExperience {
-        grid-template-columns: 1fr;
+
+    .education-photo {
+        margin: 40px 0 0 0;
     }
-    
-    .workExperience video {
-        height: 236px;
-        width: auto;
+
+    .work-experience img {
+        margin: 30px 0 0 0;
     }
-    
-    .EducationPhoto {
-        width: auto;
+
+    .work-experience video{
+        margin: 50px 0 0 0;
     }
-    
-    #EducationPhoto2 {
-        position: absolute; top: 416px; left: 400px;
+
+    .work-info {
+        margin: 5px 0 0 40px;
     }
+
+    .work-info ul {
+        border-right: 10px solid turquoise;
+        margin-right: 0;
+        padding: 0 50px 0 0;
+    }
+
+    .achievements {
+        display: block;
+    }
+
+    .achievements img {
+        display: block;
+        width: 45vw;
+        margin: 0 auto;
+    }
+
+    .achievements div{
+        padding: 0;
+        margin-right: 50px;
+    }
+
+    .skills {
+        padding: 20px 50px 50px 50px;
+        margin: 20px 25px 45px 25px;
+    }
+
+    .skills-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*Projects Gloabl--------------------------------------------------------------*/
+
+    .project-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+        margin: 55px 25px 40px 25px;
+    }
+
+    .project-images{
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .project-desc{
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .project-grid img {
+        width: 25vw;
+        margin-top: 30px;
+    }
+
+    .project-grid video {
+        height: 37vw;
+        width:auto;
+    }
+
+    /*Project Astronomy--------------------------------------------*/
     
-    #Artwork {
-        grid-template-columns: 1fr;
+    #group-pic {
+        width: 34vw;
+    }
+
+    /*Project Processing--------------------------------------------*/
+
+    #creative-artwork {
+        height: 16vw;
+        margin-top: 50px;
+    }
+
+    /*Project Bespoke--------------------------------------------*/
+
+    .bespoke {
+        margin: 100px 25px auto;
+    }
+
+    .bespoke h3 {
+        text-align: center;
+    }
+
+    .project-overview {
+        padding: 30px 25px 20px 25px;
+        margin-top: 25px;
+        border-bottom: none;
+    }
+
+    .project-overview p{
+        font-size: 1.9vw;
+    }
+
+    .arrow {
+        width: 3vw;
+        margin-left: 5px;
+    }
+
+    .process-description {
+        margin: 30px 5px 0 0;
+        padding: 0;
+    }
+
+    .process-description li{
+        margin-bottom: 5px;
+        font-size: 1.5vw;
+    }
+
+    .phase {
+        margin: 10px;
+    }
+
+    .phase p {
+        margin: 0;
+    }
+
+    .bespoke-grid {
+        display: grid;
+        grid-template-columns: minmax(0,1fr);
+        margin: 0;
+    }
+
+    .bespoke-grid img, .bespoke-grid video{
+        display: block;
+        width: 50vw;
+        margin: 15px auto;
+    }
+
+    #mindmap{
         grid-row: 2;
     }
-}
+
     
-@media only screen and (max-width: 915px) { 
-    .EducationPhoto {
-        display: none; 
+    #hallmark-logo {
+        margin: 5px auto;
     }
-    
-    .workExperience img {
-        max-width: 420px;
+
+    .left-text {
+        margin: 15px 0 0 0;
+        border-top: 10px solid turquoise;
     }
-    
-    .ProjectOverview {
-        display: block;
+
+    .right-text {
+        margin: 15px  0 0 0;
+        border-top: 10px solid turquoise;
+    }
+
+    .slideshow-buttons{
+        display: flex;
         justify-content: center;
-        margin-left: 40px;
+        align-items: center;
     }
-    
-}
-    
- @media only screen and (max-width: 960px) {   
-     
-     iframe {
-        height: 80px;
-        width: 300px;
-        position: relative;
-        margin: 10px 0px 10px 20px; 
+
+    #slideshow-container button {
+        display: inline-block;
+        font-size: 20px;
+        margin: 5px 15px auto
     }
-     
-     .AboutMe {
-         display: blocK;
-         padding-left: 30px;
-     }
-     
-     .AboutMe div {
-         padding: 0px 70px 0px 20px;
-     }
+
 }
 
+/*Phone -------------------------------------------------------------------------------*/
+@media only screen and (max-width: 719px) and (min-width: 320px){
+    /*Project Gallery--------------------------------------------------------*/
 
-@media only screen and (max-width: 860px) {
-   nav {
-        justify-content: space-around;
+    .project-gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
+
+    /*About Me--------------------------------------------------------------------*/
+
+    .intro-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
     }
     
-   nav a {
-       font-size: 17px;
-       padding: none;
-   }
+    .my-intro {
+        margin: 0 10px 10px 10px;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
     
-   footer a {
-       font-size: 17px;
-       display: flex;
-       flex-wrap: nowrap;
-   }
+    .my-picture {
+        width: 55vw;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        margin-top: 30px;
+    }
     
-   h2{
-      font-size: 1.3em;  
-   }
+    .about-me{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        margin: 0 10px 10px 10px;
+    }
     
-   h3{
-      font-size: 1em;   
-   }  
-    
-   .MyPicture {
-      max-width: 200px;
-       vertical-align: middle;
-   }
-    
-    .IntroGrid {
-      grid-template-columns: 1fr;       
+    .about-me div {
+        margin: 0px 10px 0px 10px;
+        height: 770px;
+        border-bottom: none;
     }
     
     iframe {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    /*Education / Work Experience----------------------------------------------------------------------------------*/
+    .education {
         display: block;
-        margin: 0 auto;
-        margin-top: 40px;
-        margin-bottom: 30px;
+        margin: 35px 10px auto;
+        border-bottom: 10px solid turquoise;
+        text-align: center;
     }
-    
-    .Skills {
-        grid-template-columns: 1fr;
-    }
-    
-    .Skills ul:last-child {
-        margin-top: 0;
-    }
-   
-    #Astronomy div:first-of-type {
-        grid-template-columns: 1fr;
-        grid-row: 2;
-    }
-    
-}
 
-@media only screen and (max-width: 700px) {
-    .LeftText {
-        margin-right: 60px;
+    .education-list {
+        border-bottom: none;
+        padding: 0;
+        margin-bottom: 15px;
+        list-style-type: none;
     }
-    
-    .RightText {
-       margin-right: 60px; 
-    }
-    
-    
-}
 
-@media only screen and (max-width: 600px) {
-   nav a {
-       font-size: 12px;
-   }
-    
-   footer a {
-       font-size: 12px;
-       display: flex;
-       flex-wrap: nowrap;
-   }
-    
-   .ProjectGallery {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr); 
-    }
-    
-    .workExperience div:last-of-type ul {
-        border: 10px solid turquoise;
-        padding-left: 40px;
-    }
-    
-    .Achievements div:first-of-type {
-        border: 10px solid turquoise;
-    }
-    
-    .BespokeGrid img {
-        max-width: 350px;
-    }
-    
-    #HallmarkLogo {
-        max-width: 350px;
-        margin-left: 0;
-    }
-    
-    .BespokeGrid video {
-        width: 350px;
+    .education-photo {
+        display: block;
+        margin: 15px auto;
+        width: 45vw;
         height: auto;
-        margin-left: 40px;
+    }
+
+    .work-experience {
+        margin: 0 10px auto;
+        display: block;
+        border-bottom: 10px solid turquoise;
+    }
+
+    .work-experience img {
+        display: block;
+        margin: 15px auto;
+        width: 45vw;
+    }
+
+    .work-experience video{
+        display: block;
+        margin: 15px auto;
+        width: 45vw;
+    }
+
+    .work-info {
+        margin: 5px 0 0 0;
+        text-align: center;
+    }
+
+    .work-info ul {
+        border: none;
+        margin: 5px 15px auto;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .achievements {
+        display: block;
+        margin: 0 10px auto;
+        border-bottom: 10px solid turquoise;
+        text-align: center;
+    }
+
+    .achievements ul {
+        margin: 5px 15px auto;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .achievements img {
+        margin: 15px auto;
+        width: 45vw;
+    }
+
+    .achievements div{
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .skills {
+        padding: 0;
+        border: none;
+        margin: 0 10px auto;
+        text-align: center;
+    }
+
+    .skills ul{
+        padding: 0;
+        list-style-type: none;
+    }
+
+    /*Projects Global--------------------------------------------------------------*/
+
+    .project-grid {
+        display: block;
+        margin: 35px 15px 20px 15px;
+    }
+
+    .project-images{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-desc{
+        grid-row: 1;
+        grid-column: 2;
+        border: none;
+        padding: 0;
+    }
+
+    .project-desc h2{
+        text-align: center;
+    }
+
+    .project-grid img {
+        display: inline-block;
+        width: 20vw;
+        margin: 5px 5px 0 0;
+    }
+
+    .project-grid video {
+        height: 37vw;
+        width:auto;
     }
     
-    #Persona {
-        width: 350px;
+    .text {
+        font-size: 5vw;
+    }
+
+    /*Project Astronomy--------------------------------------------*/
+    
+    #group-pic {
+        width: 30vw;
     }
     
-    #FinalPrototype {
-         width: 350px;
+    /*Project Processing--------------------------------------------*/
+
+    #creative-artwork {
+        height: 35vw;
     }
-    
-    #Mindmap {
-        width: 60%;
-        margin-left: 97px;
+
+    /*Project Fashion--------------------------------------------*/
+    #fashion-video{
+        width: 70vw;
+        height: auto;
     }
-    
-    .Arrow {
+
+    /*Project Bespoke--------------------------------------------*/
+
+    .bespoke {
+        margin: 50px 15px auto;
+    }
+
+    .bespoke ul{
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .bespoke li{
+        margin-bottom: 5px;
+        font-size: 1.9vw;
+    }
+
+    .bespoke h3 {
+        text-align: center;
+    }
+
+    .project-overview {
+        grid-template-columns: repeat(5, minmax(0,1fr));
+        padding: 15px 0 0 0;
+        margin-top: 25px;
+        border-bottom: none;
+    }
+
+    .arrow {
         display: none;
     }
+
+    .process-description {
+        margin: 10px 5px 0 0;
+        padding: 0;
+    }
+
+    .phase {
+        margin: 10px;
+    }
+
+    .phase p {
+        margin: 0;
+    }
+
+    .bespoke-grid {
+        display: grid;
+        grid-template-columns: minmax(0,1fr);
+        margin: 0;
+    }
+
+    .bespoke-grid img, .bespoke-grid video{
+        display: block;
+        width: 50vw;
+        margin: 15px auto;
+    }
+
+    #mindmap{
+        grid-row: 2;
+    }
+
     
+    #hallmark-logo {
+        width: 175px;
+        margin: 5px auto;
+    }
+
+    .left-text {
+        margin: 15px 0 0 0;
+        border-top: 10px solid turquoise;
+    }
+
+    .right-text {
+        margin: 15px  0 0 0;
+        border-top: 10px solid turquoise;
+    }
+
+    .slideshow-buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #slideshow-container button {
+        display: inline-block;
+        font-size: 20px;
+        margin: 5px 15px auto
+    }
 }
 
 
