@@ -724,6 +724,7 @@ footer a:hover{
         width: 55vw;
         grid-column-start: 1;
         grid-row-start: 1;
+        margin-top: 30px;
     }
     
     .about-me{
