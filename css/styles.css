@@ -855,6 +855,10 @@ footer a:hover{
         height: 37vw;
         width:auto;
     }
+    
+    .text {
+        font-size: 5vw;
+    }
 
     /*Project Astronomy--------------------------------------------*/
     
