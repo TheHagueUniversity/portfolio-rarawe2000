@@ -521,11 +521,6 @@ footer a:hover{
     .education {
         display: flow-root;
     }
-    
-    .education div:nth-of-type(2){
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
 
     .education-photo {
         margin: 40px 0 0 0;
