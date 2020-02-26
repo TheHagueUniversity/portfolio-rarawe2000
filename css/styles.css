@@ -227,7 +227,7 @@ iframe {
 .project-desc{
     grid-row: 1;
     grid-column: 2;
-    padding: 0px 50px 30px 30px;
+    padding: 0px 80px 0px 50px;
     border-right: 10px solid turquoise;
     border-bottom: 10px solid turquoise;  
 }
@@ -251,17 +251,15 @@ iframe {
     border: 5px solid black;
 }
 
-/*Project Astronomy--------------------------------------------*/
-
-#group-pic {
-    width: 44vw;
+/*Project Fashion--------------------------------------------*/
+#fashion-video{
+    width: 40vw;
     height: auto;
 }
 
-/*Project Fashion--------------------------------------------*/
-#fashion-video{
-    width: 31vw;
-    height: auto;
+.fashion {
+    display: block;
+    margin-top: 110px;
 }
 
 /*Project Bespoke--------------------------------------------*/
@@ -582,15 +580,16 @@ footer a:hover{
     /*Projects Gloabl--------------------------------------------------------------*/
 
     .project-grid {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
-        margin: 55px 25px 40px 25px;
+        display: block;
+        /*grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);*/
+        margin: 100px 25px 40px 25px;
     }
 
     .project-images{
         grid-row: 1;
         grid-column: 1;
     }
+    
 
     .project-desc{
         grid-row: 1;
@@ -598,19 +597,14 @@ footer a:hover{
     }
 
     .project-grid img {
-        width: 25vw;
-        margin-top: 30px;
+        display: inline-block;
+        width: 60vw;
+        margin: 20px 130px; 
     }
 
     .project-grid video {
         height: 37vw;
         width:auto;
-    }
-
-    /*Project Astronomy--------------------------------------------*/
-    
-    #group-pic {
-        width: 34vw;
     }
 
     /*Project Processing--------------------------------------------*/
@@ -864,6 +858,7 @@ footer a:hover{
 
     .project-desc h2{
         text-align: center;
+        margin-top: 50px;
     }
 
     .project-grid img {
