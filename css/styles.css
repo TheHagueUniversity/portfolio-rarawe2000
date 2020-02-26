@@ -519,8 +519,6 @@ footer a:hover{
     /*Education / Work Experience----------------------------------------------------------------------------------*/
     
     .education {
-        grid-template-columns: 40vw 20vw 20vw;
-        gap: 15px
         display: flow-root;
     }
 
