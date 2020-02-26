@@ -740,7 +740,6 @@ footer a:hover{
     .about-me{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2,1fr);
         margin: 0 10px 10px 10px;
     }
     
