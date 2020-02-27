@@ -244,11 +244,8 @@ iframe {
 
 /*Project Processing--------------------------------------------*/
 
-#creative-artwork {
-    height: 20vw;
-    width: auto;
-    margin-top: 20px;
-    border: 5px solid black;
+.project-images video {
+    margin-top: 50px;
 }
 
 /*Project Fashion--------------------------------------------*/
@@ -281,12 +278,7 @@ iframe {
     margin: 15px auto;
 }
 
-.left-text {
-/*
-    margin-right: 40px;
-    margin-bottom: 20px;
-*/
-    
+.left-text {    
     margin: 15px 0 0 0;
     border-top: 10px solid turquoise;
 }
@@ -619,11 +611,12 @@ footer a:hover{
     }
 
     /*Project Processing--------------------------------------------*/
-
-    #creative-artwork {
-        height: 16vw;
-        margin-top: 50px;
-    }
+    .project-images video {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    } 
+    
 
     /*Project Bespoke--------------------------------------------*/
 
@@ -898,11 +891,26 @@ footer a:hover{
     #creative-artwork {
         height: 35vw;
     }
+    
+    .project-images video {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    
+    .coding-images img {
+        display: block;
+        margin: 0 auto;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 7px;
+    }
 
     /*Project Fashion--------------------------------------------*/
     #fashion-video{
         width: 70vw;
         height: auto;
+        margin: 0 auto;
     }
 
     /*Project Bespoke--------------------------------------------*/
